@@ -8,7 +8,7 @@ const projectsData = [
         id: 1,
         title: "Cacao Winnowing Machine with Integrated Vacuum",
         shortDescription: "Designed cost-effective cacao winnower with integrated vacuum blower for chocolate producers.",
-        image: "assets/images/Chocolate Winnower/19.PNG", // FIX: correct hero image path & extension
+        image: "assets/images/Chocolate Winnower/19.png", // FIX: correct hero image path & extension
         imageGallery: [
             {
                 src: "assets/images/Chocolate Winnower/15.png",
