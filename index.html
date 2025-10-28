@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaikunth Keshav Krishnan - Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="dark-theme">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">VKK</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#timeline" class="nav-link">Journey</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <!-- Theme toggle button -->
+            <button id="theme-toggle" class="theme-toggle">
+                <i class="fas fa-sun"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Vaikunth Keshav Krishnan</h1>
+            <p class="hero-subtitle">
+                <span id="typed-text"></span>
+                <span class="typing-cursor">|</span>
+            </p>
+            <p class="hero-description">Passionate about computational fluid dynamics, robotics, and innovative engineering solutions</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I am a mechanical engineering graduate student with expertise in computational fluid dynamics, mechatronics, and design for manufacturability. My passion lies in solving complex engineering problems through innovative design and analysis.</p>
+                    <p>Currently pursuing advanced studies at the University of Colorado Boulder, I combine theoretical knowledge with hands-on experience in robotics, thermal systems, and product development.</p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <h3>Education</h3>
+                            <p>M.S. Mechanical Engineering<br>University of Colorado Boulder</p>
+                        </div>
+                        <div class="info-item">
+                            <h3>Focus Areas</h3>
+                            <p>CFD • Robotics • Heat Transfer<br>Product Design • Manufacturing</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ✅ Profile Photo Section (Updated) -->
+                <div class="about-image" style="display:flex; justify-content:center; align-items:center;">
+                    <img src="assets/images/pics/Profile.jpg" 
+                         alt="Vaikunth Keshav Krishnan" 
+                         id="profile-photo"
+                         style="width:100%; max-width:280px; border-radius:50%; box-shadow:0 8px 20px rgba(0,0,0,0.4); object-fit:cover; opacity:0; transform:translateY(20px); transition:opacity 1s ease, transform 1s ease;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="timeline-section">
+        <div class="container">
+            <h2 class="section-title">My Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2024 - Present</div>
+                        <h3>Graduate Student</h3>
+                        <h4>University of Colorado Boulder</h4>
+                        <p>M.S. in Mechanical Engineering with focus on CFD, Robotics, and Design for Manufacturing. Current GPA: 3.83/4.0. Expected Graduation: May 2026.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <div class="timeline-date">June 2022 - Sep 2023</div>
+                        <h3>Engineer - Mechanical Design</h3>
+                        <h4>Hamsa Environmental Solutions Private Limited, Tamil Nadu, India</h4>
+                        <p>Designed pressure vessels, heat exchangers, and wiped film evaporators. Developed P&ID drafts for chemical waste treatment systems using CADWorx, Solid Edge, and Ansys.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2021</div>
+                        <h3>Intern - Mechanical Design</h3>
+                        <h4>Subzero Motorsport, Dubai, UAE</h4>
+                        <p>Assisted with vehicle ECU integration, diagnostics, and supported CAE software usage during undergraduate internship.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2019</div>
+                        <h3>Intern - Mechanical Design</h3>
+                        <h4>Al Al Ashwaq Building Maintenance, Dubai, UAE</h4>
+                        <p>Designed 2D layouts for electrical, plumbing, HVAC, and firefighting systems in AutoCAD during summer internship.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2018 - 2021</div>
+                        <h3>Bachelor of Engineering</h3>
+                        <h4>BITS Pilani - Dubai Campus, UAE</h4>
+                        <p>B.E. in Mechanical Engineering with Minor in Finance. GPA: 7.36/10.0. Graduated with comprehensive knowledge in mechanical design and systems.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid" id="projects-grid">
+                <!-- Projects loaded dynamically from script.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Engineering Software</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">ANSYS Fluent</span>
+                            <div class="skill-bar"><div class="skill-progress" data-skill="90"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">SolidWorks</span>
+                            <div class="skill-bar"><div class="skill-progress" data-skill="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">MATLAB</span>
+                            <div class="skill-bar"><div class="skill-progress" data-skill="80"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Programming</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">C++</span>
+                            <div class="skill-bar"><div class="skill-progress" data-skill="75"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar"><div class="skill-progress" data-skill="70"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Arduino</span>
+                            <div class="skill-bar"><div class="skill-progress" data-skill="85"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Engineering Domains</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">CFD Analysis</span>
+                        <span class="skill-tag">Heat Transfer</span>
+                        <span class="skill-tag">Robotics</span>
+                        <span class="skill-tag">Mechatronics</span>
+                        <span class="skill-tag">DFA/DFM</span>
+                        <span class="skill-tag">FEA</span>
+                        <span class="skill-tag">Control Systems</span>
+                        <span class="skill-tag">CAD Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <p class="contact-text">I'm always interested in discussing new opportunities and engineering challenges. Feel free to reach out!</p>
+                <div class="contact-info">
+                    <a href="mailto:vaikunth.krishnan@colorado.edu" class="contact-link">
+                        <span class="contact-icon">📧</span>
+                        vaikunth.krishnan@colorado.edu
+                    </a>
+                    <a href="https://www.linkedin.com/in/vaikunthkk/" class="contact-link">
+                        <span class="contact-icon">💼</span>
+                        LinkedIn Profile
+                    </a>
+                    <a href="assets/docs/RESUME OF K.VAIKUNTH KESHAV DATED 24th July 2025.pdf" class="contact-link" target="_blank">
+                        <span class="contact-icon">👁️</span>
+                        View Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Vaikunth Keshav Krishnan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title"></h2>
+                <span class="modal-close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="modal-meta">
+                    <div class="modal-date" id="modal-date"></div>
+                    <div class="modal-team" id="modal-team"></div>
+                </div>
+                <div class="modal-section">
+                    <h3>Project Overview</h3>
+                    <div id="modal-overview"></div>
+                </div>
+                <div class="modal-section">
+                    <h3>Technical Details</h3>
+                    <div id="modal-technical"></div>
+                </div>
+                <div class="modal-section">
+                    <h3>Technologies Used</h3>
+                    <div class="modal-tech-tags" id="modal-technologies"></div>
+                </div>
+                <div class="modal-section">
+                    <h3>Results & Impact</h3>
+                    <div id="modal-results"></div>
+                </div>
+                <div class="modal-section" id="modal-report-section">
+                    <h3>Project Report</h3>
+                    <div class="report-container">
+                        <p>Complete project documentation including methodology, analysis, and detailed results.</p>
+                        <a href="#" id="modal-report-link" class="btn btn-secondary" target="_blank">
+                            <i class="fas fa-file-pdf"></i> View Full Report
+                        </a>
+                    </div>
+                </div>
+                <div class="modal-actions">
+                    <a href="#" target="_blank" class="btn btn-primary" id="github-link">
+                        <i class="fab fa-github"></i> View Code on GitHub
+                    </a>
+                    <a href="mailto:vaikunth.krishnan@colorado.edu" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i> Discuss This Project
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+
+    <script>
+        // Add fade-in for profile photo when in view
+        document.addEventListener('DOMContentLoaded', () => {
+            const profile = document.getElementById('profile-photo');
+            if (profile) {
+                const observer = new IntersectionObserver(entries => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            profile.style.opacity = '1';
+                            profile.style.transform = 'translateY(0)';
+                        }
+                    });
+                }, { threshold: 0.4 });
+                observer.observe(profile);
+            }
+        });
+    </script>
+</body>
+</html>
