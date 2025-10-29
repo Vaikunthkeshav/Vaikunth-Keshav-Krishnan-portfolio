@@ -49,6 +49,10 @@ const projectsData = [
             {
                 src: "assets/images/Chocolate Winnower/43.png",
                 caption: "Performance testing results showing separation efficiency and throughput data"
+            },
+                        {
+                src: "assets/images/Chocolate Winnower/45.png",
+                caption: "Asby Chart for Material Selection"
             }
         ],
         technologies: ["SolidWorks", "Material Selection", "DFM", "SLS Manufacturing", "Ashby Charts"],
@@ -77,45 +81,10 @@ const projectsData = [
 <h3>Material Selection and Engineering Analysis</h3>
 <p>The design process utilized systematic material selection methodology with Ashby charts evaluating Young's modulus, density, and cost criteria. Strategic material choices balanced mechanical performance, cost constraints, and food safety requirements.</p>
 
-<p>We compared three candidate polymers for the primary enclosure (Options A, B, C) across stiffness, impact resistance, cost, and manufacturability. Option B achieved the best balance and is recommended.</p>
 
-<table style="width:80%; border-collapse:collapse; margin:1rem auto; text-align:center;">
-  <thead style="background:#f4b400; color:#000;">
-    <tr>
-      <th style="border:1px solid #555; padding:8px;">Option</th>
-      <th style="border:1px solid #555; padding:8px;">Stiffness</th>
-      <th style="border:1px solid #555; padding:8px;">Impact</th>
-      <th style="border:1px solid #555; padding:8px;">Cost</th>
-      <th style="border:1px solid #555; padding:8px;">Moldability</th>
-      <th style="border:1px solid #555; padding:8px;">Verdict</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr style="background:#111;">
-      <td style="border:1px solid #555; padding:8px;">A</td>
-      <td>Med</td><td>Low</td><td>Low</td><td>Good</td><td>Backup</td>
-    </tr>
-    <tr style="background:#1a1a1a;">
-      <td style="border:1px solid #555; padding:8px;">B</td>
-      <td>High</td><td>High</td><td>Med</td><td>Good</td>
-      <td style="font-weight:bold; color:#4CAF50;">Winner</td>
-    </tr>
-    <tr style="background:#111;">
-      <td style="border:1px solid #555; padding:8px;">C</td>
-      <td>Med</td><td>Med</td><td>Low</td><td>Fair</td><td>Consider</td>
-    </tr>
-  </tbody>
-</table>
-
-<div style="display:grid; grid-template-columns:repeat(2,1fr); gap:1rem; margin:1.5rem 0;">
-  <div>
-    <img src="assets/images/Chocolate Winnower/a.png" alt="Ashby Chart 1" style="width:100%; border-radius:8px;">
-    <p style="text-align:center; font-size:0.85rem; color:var(--text-secondary);"><em>Stiffness vs. Density Ashby chart highlighting material trade-offs.</em></p>
-  </div>
-  <div>
-    <img src="assets/images/Chocolate Winnower/b.png" alt="Ashby Chart 2" style="width:100%; border-radius:8px;">
-    <p style="text-align:center; font-size:0.85rem; color:var(--text-secondary);"><em>Cost vs. Strength Ashby chart validating polymer B selection.</em></p>
-  </div>
+<div class="project-image">
+    <img src="assets/images/Chocolate Winnower/45.png" alt="Asby Chart for Material Selection">
+    <p>Strength vs. Density Ashby chart highlighting material trade-offs.</p>
 </div>
 
 <h4>Final Component Materials</h4>
@@ -129,7 +98,7 @@ const projectsData = [
                 <p>The manufacturing approach utilized Selective Laser Sintering (SLS) for polymer components and laser cutting for stainless steel housing. The design features electronic speed control for the vacuum motor, gravity-fed operation, and integrated collection system.</p>
 
                 <div class="project-image">
-                    <img src="assets/images/Chocolate Winnower/11.png" alt="3D CAD Assembly">
+                    <img src="assets/images/Chocolate Winnower/19.png" alt="3D CAD Assembly">
                     <p style="font-style: italic;"><strong>Complete CAD Assembly:</strong> Detailed 3D model showing the integrated winnowing machine design with all components. The assembly demonstrates compact footprint and efficient material flow paths for small-scale chocolate production.</p>
                 </div>
 
@@ -715,7 +684,7 @@ const projectsData = [
                 <div style="display:grid; grid-template-columns:repeat(2,1fr); gap:1rem; margin:1rem 0;">
                     <div>
                         <img src="assets/images/Reverse Engineering/86.png" alt="Ashby Chart - Stiffness vs Density"
-                            style="width:100%; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.4);">
+                            style="width:90%; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.4);">
                         <p style="text-align:center; font-size:0.9rem; color:var(--text-secondary); font-style:italic; margin-top:0.5rem;">
                             Stiffness vs. Density Ashby chart highlighting material trade-offs.
                         </p>
