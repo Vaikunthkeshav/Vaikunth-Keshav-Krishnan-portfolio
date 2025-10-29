@@ -1,0 +1,641 @@
+// Enhanced Portfolio Script with Professional Modal System
+// Replace your existing script.js with this complete version
+
+// Enhanced Projects Data with Your Actual Projects
+const projectsData = [
+    {
+        id: 1,
+        title: "Cacao Winnowing Machine with Integrated Vacuum",
+        shortDescription: "Designed cost-effective cacao winnower with integrated vacuum blower for chocolate producers.",
+        image: "assets/images/DFM-FINAL/1.jpg",
+        technologies: ["SolidWorks", "Material Selection", "DFM", "SLS Manufacturing", "Ashby Charts"],
+        category: "Product Design",
+        date: "August 2024 - December 2024",
+        team: "Team Project (Argandona, Krishnan, Peterson, Vasquez)",
+        overview: `
+            <p>Developed an innovative cacao winnowing machine with integrated vacuum blower as part of the MCEN 5045 Design for Manufacturability course. The project aimed to create a cost-effective solution that surpasses existing market alternatives while providing unique functionality absent in current offerings.</p>
+            <p>The primary objective was to design a winnower that is not only more affordable but also uniquely equipped with a built-in vacuum system. This integration significantly enhances the separation efficiency by effectively removing lighter husks from heavier cacao nibs, ensuring a cleaner and more precise winnowing operation.</p>
+        `,
+        technical: `
+            <ul>
+                <li><strong>Material Selection:</strong> Utilized Ashby charts to evaluate optimal materials based on Young's modulus, density, and cost criteria</li>
+                <li><strong>Component Materials:</strong>
+                    <ul>
+                        <li>Polypropylene (PP) for blower housing and collection bins - selected for low cost and suitable mechanical properties</li>
+                        <li>301 Stainless Steel for platform - chosen for cost-effectiveness and structural integrity</li>
+                        <li>Polyethylene (PE) for separator column - excellent balance of stiffness, hardness, cost, and food safety</li>
+                        <li>Polystyrene (PS) for impeller - high stiffness and durability</li>
+                    </ul>
+                </li>
+                <li><strong>Manufacturing Process:</strong> Selective Laser Sintering (SLS) for polymer components, laser cutting for stainless steel housing</li>
+                <li><strong>Design Features:</strong> Electronic speed control for vacuum motor, gravity-fed operation, integrated collection system</li>
+            </ul>
+        `,
+        results: `
+            <ul>
+                <li><strong>Cost Achievement:</strong> Final unit price of $441.80, making it highly competitive compared to existing market alternatives</li>
+                <li><strong>Efficiency Improvement:</strong> Integrated vacuum system provides superior separation efficiency compared to traditional winnowers</li>
+                <li><strong>Market Differentiation:</strong> Unique built-in vacuum feature sets it apart from all current market offerings</li>
+                <li><strong>Scalability:</strong> Design suitable for small-scale chocolate producers to moderate-sized processing facilities</li>
+                <li><strong>User Experience:</strong> Reduced manual intervention and increased overall throughput with user-friendly operation</li>
+            </ul>
+        `,
+        reportLink: "assets/docs/Final Project Report-MCEN 5045.pdf",
+        githubLink: "https://github.com/yourusername/cacao-winnowing-machine"
+    },
+    {
+        id: 2,
+        title: "CFD Heat Sink Optimization: Natural Convection Analysis",
+        shortDescription: "Computational fluid dynamics study optimizing heat sink fin configuration achieving 62% heat transfer improvement using monolithic coupling approach.",
+        image: "assets/images/cfd/domain_diagram.png",
+        technologies: ["ANSYS Fluent", "CFD Analysis", "Python", "Monolithic Coupling", "Boussinesq Approximation"],
+        category: "Computational Analysis",
+        date: "January 2025 - May 2025",
+        team: "Team Project: Surya Sharon Raj Goda, Saravana Kumar Kodakinti Prakash, Anoop Subramanya, K. Vaikunth Keshav",
+        overview: `
+            <p>Conducted comprehensive computational fluid dynamics analysis to optimize passive heat sink design for electronic cooling applications as part of MCEN 4231/5231 Computational Fluid Dynamics course at University of Colorado Boulder.</p>
+            <p>The study investigated natural convection heat transfer performance across three fin array configurations (6, 10, and 13 fins) to determine optimal spacing that maximizes heat transfer while minimizing material usage. Used advanced monolithic coupling approach with Boussinesq approximation to solve coupled Navier-Stokes and energy equations.</p>
+            <div class="project-images" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 1.5rem 0;">
+                <div>
+                    <img src="assets/images/cfd/mesh_6fins.png" alt="6 Fins Mesh" style="width: 100%; border-radius: 8px;">
+                    <p style="text-align: center; font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">6 Fins Mesh</p>
+                </div>
+                <div>
+                    <img src="assets/images/cfd/mesh_10fins.png" alt="10 Fins Mesh" style="width: 100%; border-radius: 8px;">
+                    <p style="text-align: center; font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">10 Fins Mesh (Optimal)</p>
+                </div>
+                <div>
+                    <img src="assets/images/cfd/mesh_13fins.png" alt="13 Fins Mesh" style="width: 100%; border-radius: 8px;">
+                    <p style="text-align: center; font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">13 Fins Mesh</p>
+                </div>
+            </div>
+            <p style="text-align: center; font-size: 0.9rem; color: var(--text-secondary);">Computational mesh configurations for three fin array designs</p>
+        `,
+        technical: `
+            <ul>
+                <li><strong>CFD Methodology:</strong> Monolithic coupling scheme combining velocity, pressure, and temperature function spaces for unified solution</li>
+                <li><strong>Governing Equations:</strong> Coupled Navier-Stokes and energy equations with Boussinesq approximation for natural convection</li>
+                <li><strong>Boundary Conditions:</strong>
+                    <ul>
+                        <li>Heated fin surfaces: Constant temperature 80°C</li>
+                        <li>Open boundaries: Zero heat flux, open velocity conditions</li>
+                        <li>No-slip conditions on fin and base surfaces</li>
+                        <li>Initial ambient temperature: 30°C</li>
+                    </ul>
+                </li>
+                <li><strong>Configuration Analysis:</strong> Systematic comparison of fin spacings:
+                    <ul>
+                        <li>Configuration A (6 fins): 17.8mm spacing - Isolated boundary layers</li>
+                        <li>Configuration B (10 fins): 9.3mm spacing - Interacting boundary layers (optimal)</li>
+                        <li>Configuration C (13 fins): 6.5mm spacing - Merged boundary layers</li>
+                    </ul>
+                </li>
+                <li><strong>Advanced Analysis:</strong> Rayleigh number characterization (Ra<sub>S</sub>) showing optimal range of 1×10³ to 3×10³</li>
+            </ul>
+            <div class="project-images">
+                <h4 style="margin-top: 1.5rem; margin-bottom: 1rem;">Steady-State Results Comparison</h4>
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 1rem;">
+                    <div>
+                        <img src="assets/images/cfd/vel_6fins.png" alt="6 Fins Velocity" style="width: 100%; border-radius: 8px;">
+                        <p style="text-align: center; font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">6 Fins - Velocity Field</p>
+                    </div>
+                    <div>
+                        <img src="assets/images/cfd/vel_10fins.png" alt="10 Fins Velocity" style="width: 100%; border-radius: 8px;">
+                        <p style="text-align: center; font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">10 Fins - Velocity Field</p>
+                    </div>
+                    <div>
+                        <img src="assets/images/cfd/vel_13fins.png" alt="13 Fins Velocity" style="width: 100%; border-radius: 8px;">
+                        <p style="text-align: center; font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">13 Fins - Velocity Field</p>
+                    </div>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 1rem;">
+                    <div>
+                        <img src="assets/images/cfd/temp_6fins.png" alt="6 Fins Temperature" style="width: 100%; border-radius: 8px;">
+                        <p style="text-align: center; font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">6 Fins - Temperature</p>
+                    </div>
+                    <div>
+                        <img src="assets/images/cfd/temp_10fins.png" alt="10 Fins Temperature" style="width: 100%; border-radius: 8px;">
+                        <p style="text-align: center; font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">10 Fins - Temperature</p>
+                    </div>
+                    <div>
+                        <img src="assets/images/cfd/temp_13fins.png" alt="13 Fins Temperature" style="width: 100%; border-radius: 8px;">
+                        <p style="text-align: center; font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">13 Fins - Temperature</p>
+                    </div>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 1rem;">
+                    <div>
+                        <img src="assets/images/cfd/press_6fins.png" alt="6 Fins Pressure" style="width: 100%; border-radius: 8px;">
+                        <p style="text-align: center; font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">6 Fins - Pressure Field</p>
+                    </div>
+                    <div>
+                        <img src="assets/images/cfd/press_10fins.png" alt="10 Fins Pressure" style="width: 100%; border-radius: 8px;">
+                        <p style="text-align: center; font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">10 Fins - Pressure Field</p>
+                    </div>
+                    <div>
+                        <img src="assets/images/cfd/press_13fins.png" alt="13 Fins Pressure" style="width: 100%; border-radius: 8px;">
+                        <p style="text-align: center; font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">13 Fins - Pressure Field</p>
+                    </div>
+                </div>
+            </div>
+        `,
+        results: `
+            <ul>
+                <li><strong>Optimal Configuration Identified:</strong> 10-fin design achieved highest heat transfer rate of <strong>4.62W</strong></li>
+                <li><strong>Performance Improvement:</strong> 
+                    <ul>
+                        <li>62% higher heat transfer than 6-fin configuration (2.85W)</li>
+                        <li>18% superior performance compared to 13-fin design (3.92W)</li>
+                    </ul>
+                </li>
+                <li><strong>Key Finding:</strong> Optimal heat transfer occurs when boundary layers just begin to interact (Ra<sub>S</sub> ≈ 2.03×10³)</li>
+                <li><strong>Flow Physics Insights:</strong>
+                    <ul>
+                        <li>6-fin: Strong convection but reduced surface area</li>
+                        <li>10-fin: Optimal balance of airflow and heat transfer surface</li>
+                        <li>13-fin: High surface area but poor airflow due to merged boundary layers</li>
+                    </ul>
+                </li>
+                <li><strong>Engineering Impact:</strong> Demonstrated that increasing fin count beyond optimal spacing reduces performance</li>
+                <li><strong>Validation:</strong> Results align with Bar-Cohen and Rohsenow theoretical models for natural convection</li>
+            </ul>
+            <div class="project-images">
+                <h4 style="margin-top: 1.5rem; margin-bottom: 1rem;">Transient Analysis - 10 Fins Configuration</h4>
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 1.5rem;">
+                    <div>
+                        <img src="assets/images/cfd/10fins_velocity_t1.png" alt="10 Fins t=1s" style="width: 100%; border-radius: 8px;">
+                        <p style="text-align: center; font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">Velocity at t=1s</p>
+                    </div>
+                    <div>
+                        <img src="assets/images/cfd/10fins_velocity_t5.png" alt="10 Fins t=5s" style="width: 100%; border-radius: 8px;">
+                        <p style="text-align: center; font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">Velocity at t=5s</p>
+                    </div>
+                    <div>
+                        <img src="assets/images/cfd/10fins_velocity_t25.png" alt="10 Fins t=25s" style="width: 100%; border-radius: 8px;">
+                        <p style="text-align: center; font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">Velocity at t=25s (Steady)</p>
+                    </div>
+                </div>
+                <div style="margin-bottom: 1.5rem; display: flex; flex-direction: column; align-items: center;">
+                    <img src="assets/images/cfd/boundary_layer_interaction.png" alt="Boundary Layer Interaction" style="width: 40%; max-width: 300px; border-radius: 8px;">
+                    <p style="text-align: center; font-size: 0.9rem; color: var(--text-secondary); margin-top: 0.5rem;">Boundary layer interaction analysis showing optimal spacing in 10-fin configuration</p>
+                    <div style="background: var(--card-bg); padding: 1rem; border-radius: 8px; margin-top: 1rem; border-left: 3px solid var(--primary);">
+                        <h5 style="margin-bottom: 0.5rem; color: var(--primary);">Boundary Layer Physics</h5>
+                        <p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-secondary);">
+                            The diagram illustrates the critical boundary layer development between adjacent fins. As heated air rises along the fin surfaces, thermal boundary layers form and grow. The spacing between fins (S) determines the flow regime:
+                        </p>
+                        <ul style="font-size: 0.9rem; line-height: 1.6; color: var(--text-secondary); margin-top: 0.5rem;">
+                            <li><strong>Wide spacing (6 fins, S=17.8mm):</strong> Boundary layers remain isolated with fully developed flow between fins - strong convection but limited surface area</li>
+                            <li><strong>Optimal spacing (10 fins, S=9.3mm):</strong> Boundary layers just begin to interact at the isothermal plate (T<sub>b</sub>), creating ideal balance between airflow and heat transfer surface</li>
+                            <li><strong>Narrow spacing (13 fins, S=6.5mm):</strong> Boundary layers merge completely, restricting ambient fluid entry and reducing convection effectiveness</li>
+                        </ul>
+                        <p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-secondary); margin-top: 0.5rem;">
+                            Our CFD analysis confirms that optimal heat transfer occurs at Rayleigh numbers (Ra<sub>S</sub>) between 1×10³ and 3×10³, aligning with Bar-Cohen and Rohsenow's theoretical predictions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        `,
+        reportLink: "assets/docs/CFD_FINAL_PROJECT REPORT (1).pdf",
+        githubLink: "https://github.com/yourusername/cfd-heat-sink-optimization"
+    },
+    {
+        id: 3,
+        title: "Autonomous Mario Kart Balloon Battle Robot - 1st Place Winner",
+        shortDescription: "Championship-winning autonomous robot with mecanum wheels, advanced sensor fusion, and real-time vision system for competitive balloon battle arena.",
+        image: "assets/images/MECHATRONICS/0.png",
+        technologies: ["Arduino Mega 2560", "PixyCam", "Mecanum Wheels", "TCRT5000 IR Sensors", "HC-SR04 Ultrasonic", "C++ OOP", "PWM Control"],
+        category: "Robotics",
+        date: "August 2024 - December 2024",
+        team: "Team Cobalt: Grace Farson, Thomas Garcia, Kevin Kim, Matt Sherman, Vaikunth Keshav Krishnan",
+        overview: `
+            <p><strong>🏆 FIRST PLACE WINNER</strong> - Designed and built an autonomous robot that won the Mario Kart Balloon Battle competition as part of MCEN 4115/5115 Mechatronics course. The challenge recreated the iconic video game in real life, requiring robots to autonomously navigate a 12×12 foot arena, detect colored balloons, and engage in competitive balloon-popping combat.</p>
+            <p>Our robot successfully integrated vision, movement, and weapons systems to achieve superior performance through mecanum wheel omnidirectional movement, advanced sensor fusion, and sophisticated C++ object-oriented programming. The project operated under strict constraints including $200 budget, 14"×12" footprint, and full autonomy requirements.</p>
+            <p>The competition featured double-elimination tournament format with 5-minute rounds, testing robot reliability, strategy, and engineering excellence under pressure against multiple opponents.</p>
+        `,
+        technical: `
+            <ul>
+                <li><strong>Microcontroller:</strong> Arduino Mega 2560 with 54 digital I/O pins, 16 analog inputs, and 4 UART ports enabling complex multi-system integration</li>
+                <li><strong>Vision System:</strong> PixyCam with SPI communication for real-time color signature detection and tracking with adjustable exposure, brightness, and color thresholds</li>
+                <li><strong>Advanced Sensor Array:</strong>
+                    <ul>
+                        <li>4× TCRT5000 IR sensors at chassis corners for white tape boundary detection</li>
+                        <li>3× HC-SR04 ultrasonic sensors (front + sides) for obstacle avoidance and distance measurement</li>
+                        <li>Sensor fusion algorithms with priority-based decision making</li>
+                    </ul>
+                </li>
+                <li><strong>Omnidirectional Mobility:</strong> 4× mecanum wheels with individual 8V DC motor control enabling zero-turn radius, diagonal movement, and lateral translation</li>
+                <li><strong>Weapons System:</strong> Precision lance mechanism with Parallax servo motor, 8" maximum extension, 30° attack angle, and acrylic construction</li>
+                <li><strong>Power System:</strong> 11.1V LiPo battery with SparkFun ROB-14451 motor drivers for reliable high-current operation</li>
+                <li><strong>Object-Oriented Architecture:</strong> Modular C++ class hierarchy with dedicated classes for sensors, motors, and robot behavior</li>
+            </ul>
+        `,
+        results: `
+            <ul>
+                <li><strong>🏆 Championship Victory:</strong> Won first place in double-elimination tournament, defeating all competitors through superior navigation and attack strategies</li>
+                <li><strong>Perfect Autonomous Operation:</strong> Demonstrated flawless sensor fusion with IR boundary detection, ultrasonic obstacle avoidance, and vision-based targeting</li>
+                <li><strong>Advanced Navigation:</strong> Successfully escaped starting positions in any orientation, navigated complex arena obstacles, and maintained arena boundaries</li>
+                <li><strong>Reliable Combat System:</strong> Achieved consistent balloon popping with precise lance deployment and servo-controlled attack mechanism</li>
+                <li><strong>Engineering Excellence:</strong> 
+                    <ul>
+                        <li>Robust mechanical design withstood competitive collisions and impacts</li>
+                        <li>Modular code architecture enabled rapid debugging and optimization</li>
+                        <li>Power management system provided consistent performance throughout 5-minute matches</li>
+                        <li>Sensor calibration adapted to varying lighting conditions during competition</li>
+                    </ul>
+                </li>
+                <li><strong>Strategic Innovation:</strong> Implemented stuck-detection algorithms and dynamic response behaviors that other teams lacked</li>
+                <li><strong>Budget Achievement:</strong> Complete system delivered under $200 budget constraint while achieving premium performance</li>
+            </ul>
+        `,
+        reportLink: "assets/docs/Final_Report_Mechatronics.pdf",
+        githubLink: "https://github.com/yourusername/mario-kart-robot"
+    },
+    {
+        id: 4,
+        title: "Reverse Engineering - KMM Handheld Wireless Vacuum",
+        shortDescription: "Comprehensive reverse engineering and redesign achieving 46% part count reduction for improved manufacturability.",
+        image: "assets/images/DFM-FINAL/45.png",
+        technologies: ["SolidWorks", "DFM", "DFA", "Cost Analysis", "GD&T"],
+        category: "Manufacturing",
+        date: "August 2024 - December 2024",
+        team: "Team Project (Argandona, Krishnan, Peterson, Vasquez)",
+        overview: `
+            <p>Conducted comprehensive reverse engineering analysis of the KMM handheld wireless vacuum as part of the MCEN 5045 course. The project involved complete disassembly, component analysis, and strategic redesign focused on Design for Manufacturability (DFM) and Design for Assembly (DFA) principles.</p>
+            <p>The objective was to understand the original design intent, identify manufacturing inefficiencies, and propose redesign solutions that would reduce complexity while maintaining or improving functionality.</p>
+        `,
+        technical: `
+            <ul>
+                <li><strong>Disassembly Analysis:</strong> Systematic deconstruction and documentation of all components with detailed photography and measurements</li>
+                <li><strong>Engineering Documentation:</strong> Created comprehensive technical drawings with proper GD&T specifications for all critical components</li>
+                <li><strong>Material Analysis:</strong> Identified materials used in original design and evaluated alternatives for cost and performance optimization</li>
+                <li><strong>Manufacturing Assessment:</strong> Analyzed original manufacturing processes and identified opportunities for simplification</li>
+                <li><strong>Redesign Strategy:</strong>
+                    <ul>
+                        <li>Eliminated power button cover, spring, and multiple screws</li>
+                        <li>Combined blower screen locking clip and retaining ring into single component</li>
+                        <li>Simplified assembly process while maintaining structural integrity</li>
+                    </ul>
+                </li>
+            </ul>
+        `,
+        results: `
+            <ul>
+                <li><strong>Part Count Reduction:</strong> Achieved 46% reduction in total component count through strategic design consolidation</li>
+                <li><strong>Cost Analysis:</strong> Determined break-even price of $23.20 compared to Amazon retail price of $43.99</li>
+                <li><strong>Manufacturing Efficiency:</strong> Simplified assembly process with fewer fasteners and improved component integration</li>
+                <li><strong>Design Improvements:</strong> Enhanced product compactness without significant cost increase</li>
+                <li><strong>Safety Enhancements:</strong> Identified and addressed safety concerns including battery cooling requirements and charging protocols</li>
+                <li><strong>Professional Documentation:</strong> Created industry-standard engineering drawings suitable for manufacturing implementation</li>
+            </ul>
+        `,
+        reportLink: "assets/docs/MCEN 5045 Reverse Engineering Report.pdf",
+        githubLink: "https://github.com/yourusername/vacuum-reverse-engineering"
+    },
+    {
+        id: 5,
+        title: "4-DOF Robotic Arm with Gripper",
+        shortDescription: "Kinematic simulation and control system for 4-degree-of-freedom robotic arm with precision gripper mechanism.",
+        image: "assets/images/MECHATRONICS/20.png",
+        technologies: ["SolidWorks", "Forward Kinematics", "Robotics", "Motion Simulation", "Control Systems"],
+        category: "Robotics",
+        date: "August 2024 - December 2024",
+        team: "Individual Project - Introduction to Robotics Course",
+        overview: `
+            <p>Designed and simulated a 4-degree-of-freedom robotic arm with integrated gripper mechanism for precise object manipulation tasks. The project focused on kinematic analysis, motion planning, and control system development using SolidWorks simulation environment.</p>
+            <p>The robotic arm was designed to demonstrate fundamental robotics principles including forward kinematics, workspace analysis, and trajectory planning for industrial automation applications.</p>
+        `,
+        technical: `
+            <ul>
+                <li><strong>Kinematic Design:</strong> Implemented 4-DOF configuration with optimized joint placement for maximum workspace coverage</li>
+                <li><strong>Forward Kinematics:</strong> Developed mathematical models using Denavit-Hartenberg parameters for precise end-effector positioning</li>
+                <li><strong>SolidWorks Integration:</strong> Utilized motion simulation capabilities for kinematic analysis and trajectory visualization</li>
+                <li><strong>Gripper Mechanism:</strong> Designed parallel-jaw gripper with force analysis for reliable object grasping</li>
+                <li><strong>Joint Control:</strong> Implemented servo motor control strategies for smooth and accurate motion</li>
+                <li><strong>Workspace Analysis:</strong> Characterized reachable workspace and identified singular configurations</li>
+            </ul>
+        `,
+        results: `
+            <ul>
+                <li><strong>Kinematic Accuracy:</strong> Successfully demonstrated precise end-effector positioning through forward kinematic calculations</li>
+                <li><strong>Motion Simulation:</strong> Validated smooth trajectory execution in SolidWorks environment</li>
+                <li><strong>Workspace Optimization:</strong> Achieved efficient workspace utilization with 4-DOF configuration</li>
+                <li><strong>Control Integration:</strong> Implemented effective joint control strategies for coordinated motion</li>
+                <li><strong>Design Validation:</strong> Confirmed mechanical design integrity through simulation analysis</li>
+                <li><strong>Robotics Fundamentals:</strong> Applied core robotics principles to practical manipulation system design</li>
+            </ul>
+        `,
+        reportLink: "assets/docs/Robotic Arm Report.pdf",
+        githubLink: "https://github.com/yourusername/4dof-robotic-arm"
+    }
+];
+
+// Modal functionality
+const modal = document.getElementById('project-modal');
+const modalClose = document.querySelector('.modal-close');
+
+// Open modal function
+function openProjectModal(projectId) {
+    const project = projectsData.find(p => p.id === projectId);
+    if (!project) return;
+
+    // Populate modal content
+    document.getElementById('modal-title').textContent = project.title;
+    document.getElementById('modal-date').textContent = project.date;
+    document.getElementById('modal-team').textContent = project.team;
+    document.getElementById('modal-overview').innerHTML = project.overview;
+    document.getElementById('modal-technical').innerHTML = project.technical;
+    document.getElementById('modal-results').innerHTML = project.results;
+    document.getElementById('modal-report-link').href = project.reportLink;
+
+    // Set GitHub link - FIXED
+    const githubButton = document.querySelector('#github-link');
+    githubButton.href = project.githubLink || "https://github.com/yourusername";
+
+    // Populate technologies
+    const techContainer = document.getElementById('modal-technologies');
+    techContainer.innerHTML = '';
+    project.technologies.forEach((tech, index) => {
+        const techTag = document.createElement('div');
+        techTag.className = 'tech-tag';
+        techTag.textContent = tech;
+        techTag.style.animationDelay = `${index * 0.1}s`;
+        techContainer.appendChild(techTag);
+    });
+
+    // Show modal with animation
+    modal.classList.add('show');
+    document.body.style.overflow = 'hidden'; // Prevent background scrolling
+}
+
+// Close modal function
+function closeProjectModal() {
+    modal.classList.remove('show');
+    document.body.style.overflow = 'auto'; // Restore scrolling
+}
+
+// Event listeners for modal
+modalClose.addEventListener('click', closeProjectModal);
+modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+        closeProjectModal();
+    }
+});
+
+// Escape key to close modal
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('show')) {
+        closeProjectModal();
+    }
+});
+
+// Generate project cards with real images support
+function generateProjectCards() {
+    const projectsGrid = document.getElementById('projects-grid');
+    projectsGrid.innerHTML = '';
+
+    projectsData.forEach(project => {
+        const projectCard = document.createElement('div');
+        projectCard.className = 'project-card';
+        projectCard.addEventListener('click', () => openProjectModal(project.id));
+
+        projectCard.innerHTML = `
+            <div class="project-image">
+                ${project.image && !project.image.includes('data:image/svg') ? 
+                    `<img src="${project.image}" alt="${project.title}" style="width: 100%; height: 100%; object-fit: cover;">` 
+                    : `<span>${project.category}</span>`
+                }
+            </div>
+            <div class="project-content">
+                <h3 class="project-title">${project.title}</h3>
+                <p class="project-description">${project.shortDescription}</p>
+                <div class="project-tech">
+                    ${project.technologies.slice(0, 3).map(tech => 
+                        `<span class="tech-tag">${tech}</span>`
+                    ).join('')}
+                    ${project.technologies.length > 3 ? `<span class="tech-tag">+${project.technologies.length - 3} more</span>` : ''}
+                </div>
+            </div>
+        `;
+
+        projectsGrid.appendChild(projectCard);
+    });
+}
+
+// Theme toggle functionality
+const themeToggle = document.getElementById('theme-toggle');
+const body = document.body;
+const themeIcon = themeToggle.querySelector('i');
+
+function toggleTheme() {
+    body.classList.toggle('dark-theme');
+    const isDark = body.classList.contains('dark-theme');
+    
+    themeIcon.className = isDark ? 'fas fa-sun' : 'fas fa-moon';
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+}
+
+
+// REPLACE the theme functions in your script.js with these updated versions:
+
+// Load saved theme - NOW DEFAULTS TO DARK
+function loadTheme() {
+    const savedTheme = localStorage.getItem('theme') || 'dark'; // DEFAULT TO DARK
+    
+    if (savedTheme === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        body.classList.add('dark-theme');
+        if (themeIcon) {
+            themeIcon.className = 'fas fa-sun'; // Sun icon for dark theme
+        }
+    } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+        body.classList.remove('dark-theme');
+        if (themeIcon) {
+            themeIcon.className = 'fas fa-moon'; // Moon icon for light theme
+        }
+    }
+    
+    // Save the theme if it wasn't already saved
+    if (!localStorage.getItem('theme')) {
+        localStorage.setItem('theme', 'dark');
+    }
+}
+
+// Toggle theme function - UPDATED for proper data-theme attribute
+function toggleTheme() {
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    
+    document.documentElement.setAttribute('data-theme', newTheme);
+    
+    if (newTheme === 'dark') {
+        body.classList.add('dark-theme');
+        themeIcon.className = 'fas fa-sun';
+    } else {
+        body.classList.remove('dark-theme');
+        themeIcon.className = 'fas fa-moon';
+    }
+    
+    localStorage.setItem('theme', newTheme);
+}
+
+// Typing animation
+const texts = [
+    "Mechanical Engineer",
+    "CFD Specialist", 
+    "Robotics Enthusiast",
+    "Design Engineer",
+    "Problem Solver"
+];
+
+let textIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+const typedTextElement = document.getElementById('typed-text');
+const typingSpeed = 100;
+const deletingSpeed = 50;
+const pauseTime = 2000;
+
+function typeText() {
+    const currentText = texts[textIndex];
+    
+    if (isDeleting) {
+        typedTextElement.textContent = currentText.substring(0, charIndex - 1);
+        charIndex--;
+    } else {
+        typedTextElement.textContent = currentText.substring(0, charIndex + 1);
+        charIndex++;
+    }
+    
+    if (!isDeleting && charIndex === currentText.length) {
+        setTimeout(() => {
+            isDeleting = true;
+        }, pauseTime);
+    } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        textIndex = (textIndex + 1) % texts.length;
+    }
+    
+    const speed = isDeleting ? deletingSpeed : typingSpeed;
+    setTimeout(typeText, speed);
+}
+
+// Smooth scrolling for navigation links
+function smoothScroll() {
+    const navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const targetId = link.getAttribute('href').substring(1);
+            const targetSection = document.getElementById(targetId);
+            
+            if (targetSection) {
+                targetSection.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+}
+
+// Skill bar animations
+function animateSkillBars() {
+    const skillBars = document.querySelectorAll('.skill-progress');
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const skillBar = entry.target;
+                const width = skillBar.getAttribute('data-skill');
+                skillBar.style.width = width + '%';
+            }
+        });
+    }, { threshold: 0.5 });
+    
+    skillBars.forEach(bar => observer.observe(bar));
+}
+
+// Scroll animations
+function initScrollAnimations() {
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -100px 0px'
+    };
+    
+    const observerCallback = (entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    };
+    
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+    
+    // Animate sections
+    document.querySelectorAll('section').forEach(section => {
+        section.style.opacity = '0';
+        section.style.transform = 'translateY(20px)';
+        section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        observer.observe(section);
+    });
+    
+    // Animate timeline items
+    const timelineObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry, index) => {
+            if (entry.isIntersecting) {
+                setTimeout(() => {
+                    entry.target.classList.add('visible');
+                }, index * 100);
+            }
+        });
+    }, { threshold: 0.3 });
+    
+    document.querySelectorAll('.timeline-item').forEach(item => {
+        timelineObserver.observe(item);
+    });
+}
+
+// Navigation highlighting
+function initNavigation() {
+    const navLinks = document.querySelectorAll('.nav-link');
+    const sections = document.querySelectorAll('section');
+    
+    const observerOptions = {
+        root: null,
+        rootMargin: '-30% 0px -70% 0px'
+    };
+
+    const observerCallback = (entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${entry.target.id}`) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+        });
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+    sections.forEach(section => observer.observe(section));
+}
+
+// Initialize everything when DOM is loaded
+document.addEventListener('DOMContentLoaded', () => {
+    loadTheme();
+    generateProjectCards();
+    typeText();
+    smoothScroll();
+    animateSkillBars();
+    initScrollAnimations();
+    initNavigation();
+    
+    // Theme toggle
+    if (themeToggle) {
+        themeToggle.addEventListener('click', toggleTheme);
+    }
+});
