@@ -8,7 +8,7 @@ const projectsData = [
         id: 1,
         title: "Cacao Winnowing Machine with Integrated Vacuum",
         shortDescription: "Designed cost-effective cacao winnower with integrated vacuum blower for chocolate producers.",
-        image: "docs/assets/images/Chocolate Winnower/19.png", // FIX: correct hero image path & extension
+        image: "docs/assets/images/Chocolate Winnower/5.jpg", // FIX: correct hero image path & extension
         imageGallery: [
             {
                 src: "docs/assets/images/Chocolate Winnower/15.png",
@@ -1344,3 +1344,4 @@ document.addEventListener('DOMContentLoaded', () => {
    - Mobile Interface shows 31.jpg + 32.jpg (two-up grid).
 7) All figure captions within modal content styled in italics.
 */
+
