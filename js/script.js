@@ -1,6 +1,6 @@
 // Enhanced Portfolio Script with Professional Modal System
 // Complete version with Smart Concussion Detection Helmet project added
-// UPDATED (Oct 27, 2025): Applied requested fixes (see change log at bottom)
+// UPDATED (Nov 2025): Added wiring tables for Mario Kart Robot project
 
 // Enhanced Projects Data with Your Actual Projects
 const projectsData = [
@@ -8,50 +8,50 @@ const projectsData = [
         id: 1,
         title: "Cacao Winnowing Machine with Integrated Vacuum",
         shortDescription: "Designed cost-effective cacao winnower with integrated vacuum blower for chocolate producers.",
-        image: "docs/assets/images/Chocolate Winnower/5.jpg", // FIX: correct hero image path & extension
+        image: "assets/images/Chocolate Winnower/5.jpg",
         imageGallery: [
             {
-                src: "docs/assets/images/Chocolate Winnower/15.jpg",
+                src: "assets/images/Chocolate Winnower/15.jpg",
                 caption: "Process flow diagram showing the winnowing operation with integrated vacuum system for separating husks from nibs"
             },
             {
-                src: "docs/assets/images/Chocolate Winnower/11.jpg",
+                src: "assets/images/Chocolate Winnower/11.jpg",
                 caption: "3D CAD assembly model of the complete winnowing machine design"
             },
             {
-                src: "docs/assets/images/Chocolate Winnower/12.jpg",
+                src: "assets/images/Chocolate Winnower/12.jpg",
                 caption: "Exploded view showing individual components and assembly sequence"
             },
             {
-                src: "docs/assets/images/Chocolate Winnower/13.jpg",
+                src: "assets/images/Chocolate Winnower/13.jpg",
                 caption: "Cross-sectional view highlighting the internal airflow and separation mechanism"
             },
             {
-                src: "docs/assets/images/Chocolate Winnower/16.jpg",
+                src: "assets/images/Chocolate Winnower/16.jpg",
                 caption: "Detailed component breakdown with material specifications and manufacturing processes"
             },
             {
-                src: "docs/assets/images/Chocolate Winnower/17.jpg",
+                src: "assets/images/Chocolate Winnower/17.jpg",
                 caption: "Engineering drawings with dimensions and geometric tolerances for manufacturing"
             },
             {
-                src: "docs/assets/images/Chocolate Winnower/18.jpg",
+                src: "assets/images/Chocolate Winnower/18.jpg",
                 caption: "Material selection analysis using Ashby charts for optimal component properties"
             },
             {
-                src: "docs/assets/images/Chocolate Winnower/19.jpg",
+                src: "assets/images/Chocolate Winnower/19.jpg",
                 caption: "Cost analysis breakdown showing competitive pricing compared to market alternatives"
             },
             {
-                src: "docs/assets/images/Chocolate Winnower/20.jpg",
+                src: "assets/images/Chocolate Winnower/20.jpg",
                 caption: "Manufacturing process flowchart detailing SLS printing and assembly procedures"
             },
             {
-                src: "docs/assets/images/Chocolate Winnower/43.jpg",
+                src: "assets/images/Chocolate Winnower/43.jpg",
                 caption: "Performance testing results showing separation efficiency and throughput data"
             },
             {
-                src: "docs/assets/images/Chocolate Winnower/45.jpg",
+                src: "assets/images/Chocolate Winnower/45.jpg",
                 caption: "Asby Chart for Material Selection"
             }
         ],
@@ -69,11 +69,11 @@ const projectsData = [
                 <p>Chocolate winnowing is a critical step in chocolate production that separates cacao nibs from husks after roasting. Traditional manual winnowing methods are time-consuming and inefficient for small-scale chocolate makers. This project aimed to design and manufacture an automated winnowing machine to improve efficiency while maintaining quality separation.</p>
 
                 <div class="project-image">
-                    <img src="docs/assets/images/Chocolate Winnower/15.jpg" alt="Process Flow Diagram">
+                    <img src="assets/images/Chocolate Winnower/15.jpg" alt="Process Flow Diagram">
                     <p style="font-style: italic;"><strong>Process Flow Diagram:</strong> Comprehensive winnowing operation showing the integrated vacuum system for separating husks from nibs. The gravity-assisted design optimizes material flow while ensuring efficient husk removal.</p>
                 </div>
                 <div class="project-image">
-                    <img src="docs/assets/images/Chocolate Winnower/12.jpg" alt="Glass Box Diagram">
+                    <img src="assets/images/Chocolate Winnower/12.jpg" alt="Glass Box Diagram">
                      <p style="font-style: italic;">Glass Box Diagram</p> 
                 </div>
 
@@ -83,7 +83,7 @@ const projectsData = [
 
 
 <div class="project-image">
-    <img src="docs/assets/images/Chocolate Winnower/45.jpg" alt="Asby Chart for Material Selection">
+    <img src="assets/images/Chocolate Winnower/45.jpg" alt="Asby Chart for Material Selection">
     <p>Strength vs. Density Ashby chart highlighting material trade-offs.</p>
 </div>
 
@@ -98,7 +98,7 @@ const projectsData = [
                 <p>The manufacturing approach utilized Selective Laser Sintering (SLS) for polymer components and laser cutting for stainless steel housing. The design features electronic speed control for the vacuum motor, gravity-fed operation, and integrated collection system.</p>
 
                 <div class="project-image">
-                    <img src="docs/assets/images/Chocolate Winnower/19.jpg" alt="3D CAD Assembly">
+                    <img src="assets/images/Chocolate Winnower/19.jpg" alt="3D CAD Assembly">
                     <p style="font-style: italic;"><strong>Complete CAD Assembly:</strong> Detailed 3D model showing the integrated winnowing machine design with all components. The assembly demonstrates compact footprint and efficient material flow paths for small-scale chocolate production.</p>
                 </div>
 
@@ -157,53 +157,53 @@ const projectsData = [
                 <li><strong>User Experience:</strong> Reduced manual intervention and increased overall throughput with user-friendly operation</li>
             </ul>
         `,
-        reportLink: "docs/assets/docs/Final Project Report-MCEN 5045.pdf",
+        reportLink: "assets/docs/Final Project Report-MCEN 5045.pdf",
         githubLink: "https://github.com/yourusername/cacao-winnowing-machine"
     },
     {
         id: 2,
         title: "CFD Heat Sink Optimization: Natural Convection Analysis",
         shortDescription: "Computational fluid dynamics study optimizing heat sink fin configuration achieving 62% heat transfer improvement using monolithic coupling approach.",
-        image: "docs/assets/images/cfd/domain_diagram.jpg",
+        image: "assets/images/cfd/domain_diagram.jpg",
         imageGallery: [
             {
-                src: "docs/assets/images/cfd/mesh_6fins.jpg",
+                src: "assets/images/cfd/mesh_6fins.jpg",
                 caption: "6-fin configuration mesh with coarse spacing (17.8mm) showing isolated boundary layer development"
             },
             {
-                src: "docs/assets/images/cfd/mesh_10fins.jpg",
+                src: "assets/images/cfd/mesh_10fins.jpg",
                 caption: "Optimal 10-fin configuration mesh (9.3mm spacing) with refined boundary layer resolution achieving y+ < 1"
             },
             {
-                src: "docs/assets/images/cfd/mesh_13fins.jpg",
+                src: "assets/images/cfd/mesh_13fins.jpg",
                 caption: "13-fin configuration mesh with tight spacing (6.5mm) demonstrating merged boundary layer conditions"
             },
             {
-                src: "docs/assets/images/cfd/vel_10fins.jpg",
+                src: "assets/images/cfd/vel_10fins.jpg",
                 caption: "Velocity magnitude contours for optimal 10-fin configuration showing strong convective flow with maximum velocity of 3.1e-02 m/s"
             },
             {
-                src: "docs/assets/images/cfd/temp_10fins.jpg",
+                src: "assets/images/cfd/temp_10fins.jpg",
                 caption: "Temperature distribution for 10-fin configuration displaying effective heat dissipation from 353K base to 293K ambient"
             },
             {
-                src: "docs/assets/images/cfd/press_10fins.jpg",
+                src: "assets/images/cfd/press_10fins.jpg",
                 caption: "Pressure field contours showing natural convection-driven flow patterns in the optimal fin configuration"
             },
             {
-                src: "docs/assets/images/cfd/10fins_velocity_t1.jpg",
+                src: "assets/images/cfd/10fins_velocity_t1.jpg",
                 caption: "Transient velocity field at t=1s showing initial flow development in the 10-fin configuration"
             },
             {
-                src: "docs/assets/images/cfd/10fins_velocity_t5.jpg",
+                src: "assets/images/cfd/10fins_velocity_t5.jpg",
                 caption: "Velocity field at t=5s demonstrating boundary layer growth and flow establishment"
             },
             {
-                src: "docs/assets/images/cfd/10fins_velocity_t25.jpg",
+                src: "assets/images/cfd/10fins_velocity_t25.jpg",
                 caption: "Steady-state velocity field at t=25s showing fully developed natural convection patterns"
             },
             {
-                src: "docs/assets/images/cfd/boundary_layer_interaction.jpg",
+                src: "assets/images/cfd/boundary_layer_interaction.jpg",
                 caption: "Boundary layer interaction analysis illustrating optimal spacing where thermal boundary layers just begin to interact at the base plate"
             }
         ],
@@ -216,15 +216,15 @@ const projectsData = [
             <p>The study investigated natural convection heat transfer performance across three fin array configurations (6, 10, and 13 fins) to determine optimal spacing that maximizes heat transfer while minimizing material usage. Used advanced monolithic coupling approach with Boussinesq approximation to solve coupled Navier-Stokes and energy equations.</p>
             <div class="project-images" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 1.5rem 0;">
                 <div>
-                    <img src="docs/assets/images/cfd/mesh_6fins.jpg" alt="6 Fins Mesh" style="width: 100%; border-radius: 8px;">
+                    <img src="assets/images/cfd/mesh_6fins.jpg" alt="6 Fins Mesh" style="width: 100%; border-radius: 8px;">
                     <p style="text-align: center; font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem; font-style: italic;">6 Fins Mesh</p>
                 </div>
                 <div>
-                    <img src="docs/assets/images/cfd/mesh_10fins.jpg" alt="10 Fins Mesh" style="width: 100%; border-radius: 8px;">
+                    <img src="assets/images/cfd/mesh_10fins.jpg" alt="10 Fins Mesh" style="width: 100%; border-radius: 8px;">
                     <p style="text-align: center; font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem; font-style: italic;">10 Fins Mesh (Optimal)</p>
                 </div>
                 <div>
-                    <img src="docs/assets/images/cfd/mesh_13fins.jpg" alt="13 Fins Mesh" style="width: 100%; border-radius: 8px;">
+                    <img src="assets/images/cfd/mesh_13fins.jpg" alt="13 Fins Mesh" style="width: 100%; border-radius: 8px;">
                     <p style="text-align: center; font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem; font-style: italic;">13 Fins Mesh</p>
                 </div>
             </div>
@@ -255,43 +255,43 @@ const projectsData = [
                 <h4 style="margin-top: 1.5rem; margin-bottom: 1rem;">Steady-State Results Comparison</h4>
                 <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 1rem;">
                     <div>
-                        <img src="docs/assets/images/cfd/vel_6fins.jpg" alt="6 Fins Velocity" style="width: 100%; border-radius: 8px;">
+                        <img src="assets/images/cfd/vel_6fins.jpg" alt="6 Fins Velocity" style="width: 100%; border-radius: 8px;">
                         <p style="text-align: center; font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem; font-style: italic;">6 Fins - Velocity Field</p>
                     </div>
                     <div>
-                        <img src="docs/assets/images/cfd/vel_10fins.jpg" alt="10 Fins Velocity" style="width: 100%; border-radius: 8px;">
+                        <img src="assets/images/cfd/vel_10fins.jpg" alt="10 Fins Velocity" style="width: 100%; border-radius: 8px;">
                         <p style="text-align: center; font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem; font-style: italic;">10 Fins - Velocity Field</p>
                     </div>
                     <div>
-                        <img src="docs/assets/images/cfd/vel_13fins.jpg" alt="13 Fins Velocity" style="width: 100%; border-radius: 8px;">
+                        <img src="assets/images/cfd/vel_13fins.jpg" alt="13 Fins Velocity" style="width: 100%; border-radius: 8px;">
                         <p style="text-align: center; font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem; font-style: italic;">13 Fins - Velocity Field</p>
                     </div>
                 </div>
                 <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 1rem;">
                     <div>
-                        <img src="docs/assets/images/cfd/temp_6fins.jpg" alt="6 Fins Temperature" style="width: 100%; border-radius: 8px;">
+                        <img src="assets/images/cfd/temp_6fins.jpg" alt="6 Fins Temperature" style="width: 100%; border-radius: 8px;">
                         <p style="text-align: center; font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem; font-style: italic;">6 Fins - Temperature</p>
                     </div>
                     <div>
-                        <img src="docs/assets/images/cfd/temp_10fins.jpg" alt="10 Fins Temperature" style="width: 100%; border-radius: 8px;">
+                        <img src="assets/images/cfd/temp_10fins.jpg" alt="10 Fins Temperature" style="width: 100%; border-radius: 8px;">
                         <p style="text-align: center; font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem; font-style: italic;">10 Fins - Temperature</p>
                     </div>
                     <div>
-                        <img src="docs/assets/images/cfd/temp_13fins.jpg" alt="13 Fins Temperature" style="width: 100%; border-radius: 8px;">
+                        <img src="assets/images/cfd/temp_13fins.jpg" alt="13 Fins Temperature" style="width: 100%; border-radius: 8px;">
                         <p style="text-align: center; font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem; font-style: italic;">13 Fins - Temperature</p>
                     </div>
                 </div>
                 <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 1rem;">
                     <div>
-                        <img src="docs/assets/images/cfd/press_6fins.jpg" alt="6 Fins Pressure" style="width: 100%; border-radius: 8px;">
+                        <img src="assets/images/cfd/press_6fins.jpg" alt="6 Fins Pressure" style="width: 100%; border-radius: 8px;">
                         <p style="text-align: center; font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem; font-style: italic;">6 Fins - Pressure Field</p>
                     </div>
                     <div>
-                        <img src="docs/assets/images/cfd/press_10fins.jpg" alt="10 Fins Pressure" style="width: 100%; border-radius: 8px;">
+                        <img src="assets/images/cfd/press_10fins.jpg" alt="10 Fins Pressure" style="width: 100%; border-radius: 8px;">
                         <p style="text-align: center; font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem; font-style: italic;">10 Fins - Pressure Field</p>
                     </div>
                     <div>
-                        <img src="docs/assets/images/cfd/press_13fins.jpg" alt="13 Fins Pressure" style="width: 100%; border-radius: 8px;">
+                        <img src="assets/images/cfd/press_13fins.jpg" alt="13 Fins Pressure" style="width: 100%; border-radius: 8px;">
                         <p style="text-align: center; font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem; font-style: italic;">13 Fins - Pressure Field</p>
                     </div>
                 </div>
@@ -321,20 +321,20 @@ const projectsData = [
                 <h4 style="margin-top: 1.5rem; margin-bottom: 1rem;">Transient Analysis - 10 Fins Configuration</h4>
                 <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 1.5rem;">
                     <div>
-                        <img src="docs/assets/images/cfd/10fins_velocity_t1.jpg" alt="10 Fins t=1s" style="width: 100%; border-radius: 8px;">
+                        <img src="assets/images/cfd/10fins_velocity_t1.jpg" alt="10 Fins t=1s" style="width: 100%; border-radius: 8px;">
                         <p style="text-align: center; font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem; font-style: italic;">Velocity at t=1s</p>
                     </div>
                     <div>
-                        <img src="docs/assets/images/cfd/10fins_velocity_t5.jpg" alt="10 Fins t=5s" style="width: 100%; border-radius: 8px;">
+                        <img src="assets/images/cfd/10fins_velocity_t5.jpg" alt="10 Fins t=5s" style="width: 100%; border-radius: 8px;">
                         <p style="text-align: center; font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem; font-style: italic;">Velocity at t=5s</p>
                     </div>
                     <div>
-                        <img src="docs/assets/images/cfd/10fins_velocity_t25.jpg" alt="10 Fins t=25s" style="width: 100%; border-radius: 8px;">
+                        <img src="assets/images/cfd/10fins_velocity_t25.jpg" alt="10 Fins t=25s" style="width: 100%; border-radius: 8px;">
                         <p style="text-align: center; font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem; font-style: italic;">Velocity at t=25s (Steady)</p>
                     </div>
                 </div>
                 <div style="margin-bottom: 1.5rem; display: flex; flex-direction: column; align-items: center;">
-                    <img src="docs/assets/images/cfd/boundary_layer_interaction.jpg" alt="Boundary Layer Interaction" style="width: 40%; max-width: 300px; border-radius: 8px;">
+                    <img src="assets/images/cfd/boundary_layer_interaction.jpg" alt="Boundary Layer Interaction" style="width: 40%; max-width: 300px; border-radius: 8px;">
                     <p style="text-align: center; font-size: 0.9rem; color: var(--text-secondary); margin-top: 0.5rem;">Boundary layer interaction analysis showing optimal spacing in 10-fin configuration</p>
                     <div style="background: var(--card-bg); padding: 1rem; border-radius: 8px; margin-top: 1rem; border-left: 3px solid var(--primary);">
                         <h5 style="margin-bottom: 0.5rem; color: var(--primary);">Boundary Layer Physics</h5>
@@ -353,65 +353,65 @@ const projectsData = [
                 </div>
             </div>
         `,
-        reportLink: "docs/assets/docs/CFD_FINAL_PROJECT REPORT (1).pdf",
+        reportLink: "assets/docs/CFD_FINAL_PROJECT REPORT (1).pdf",
         githubLink: "https://github.com/yourusername/cfd-heat-sink-optimization"
     },
     {
         id: 3,
         title: "Autonomous Mario Kart Balloon Battle Robot - 1st Place Winner",
         shortDescription: "Championship-winning autonomous robot with mecanum wheels, advanced sensor fusion, and real-time vision system for competitive balloon battle arena.",
-        image: "docs/assets/images/mechatronics/0.jpg",
+        image: "assets/images/mechatronics/0.jpg",
         imageGallery: [
             {
-                src: "docs/assets/images/mechatronics/0.jpg",
+                src: "assets/images/mechatronics/0.jpg",
                 caption: "Complete autonomous robot assembly with mecanum wheels, sensor array, and lance weapon system"
             },
             {
-                src: "docs/assets/images/mechatronics/2.jpg",
+                src: "assets/images/mechatronics/2.jpg",
                 caption: "Chassis construction showing mecanum wheel mounting and motor placement for omnidirectional movement"
             },
             {
-                src: "docs/assets/images/mechatronics/3.jpg",
+                src: "assets/images/mechatronics/3.jpg",
                 caption: "Electronics enclosure with Arduino Mega 2560, motor drivers, and power distribution system"
             },
             {
-                src: "docs/assets/images/mechatronics/4.jpg",
+                src: "assets/images/mechatronics/4.jpg",
                 caption: "PixyCam vision system mounted for optimal balloon detection and color signature recognition"
             },
             {
-                src: "docs/assets/images/mechatronics/5.jpg",
+                src: "assets/images/mechatronics/5.jpg",
                 caption: "Motor driver connection diagram showing SparkFun ROB-14451 wiring to Arduino and power system"
             },
             {
-                src: "docs/assets/images/mechatronics/6.jpg",
+                src: "assets/images/mechatronics/6.jpg",
                 caption: "Sensor integration layout with IR sensors for boundary detection and ultrasonic sensors for obstacle avoidance"
             },
             {
-                src: "docs/assets/images/mechatronics/7.jpg",
+                src: "assets/images/mechatronics/7.jpg",
                 caption: "Lance weapon mechanism with servo motor control and extended reach for balloon engagement"
             },
             {
-                src: "docs/assets/images/mechatronics/8.jpg",
+                src: "assets/images/mechatronics/8.jpg",
                 caption: "Power system configuration with 11.1V LiPo battery and voltage regulation for stable operation"
             },
             {
-                src: "docs/assets/images/mechatronics/9.jpg",
+                src: "assets/images/mechatronics/9.jpg",
                 caption: "Robot in action during competition showing real-time autonomous navigation and target engagement"
             },
             {
-                src: "docs/assets/images/mechatronics/10.jpg",
+                src: "assets/images/mechatronics/10.jpg",
                 caption: "Ultrasonic sensor array mounted for 360-degree obstacle detection and collision avoidance"
             },
             {
-                src: "docs/assets/images/mechatronics/11.jpg",
+                src: "assets/images/mechatronics/11.jpg",
                 caption: "Final assembled robot ready for competition with all systems integrated and calibrated"
             },
             {
-                src: "docs/assets/images/mechatronics/12.jpg",
+                src: "assets/images/mechatronics/12.jpg",
                 caption: "Tournament bracket and competition results showing championship victory path"
             },
             {
-                src: "docs/assets/images/mechatronics/13.jpg",
+                src: "assets/images/mechatronics/13.jpg",
                 caption: "Team celebration after winning first place in the autonomous Mario Kart Balloon Battle competition"
             }
         ],
@@ -430,7 +430,7 @@ const projectsData = [
                 <p>The Mario Kart Balloon Battle competition featured a challenging 12×12 foot arena with obstacles, boundary detection requirements, and strict autonomous operation. Robots needed to navigate, detect colored balloons, and engage in competitive combat within a 5-minute time limit.</p>
 
                 <div class="project-image">
-                    <img src="docs/assets/images/mechatronics/1.jpg" alt="Arena Layout">
+                    <img src="assets/images/mechatronics/1.jpg" alt="Arena Layout">
                     <p style="font-style: italic;"><strong>Competition Arena Layout:</strong> 12×12 foot field with balloon positions, L-shaped obstacles, and starting zones. White tape boundaries provided sensor reference points for autonomous navigation throughout competitive matches.</p>
                 </div>
 
@@ -444,43 +444,227 @@ const projectsData = [
                 </ul>
 
                 <div class="project-image">
-                    <img src="docs/assets/images/mechatronics/2.jpg" alt="3D MODEL OF ROBOT">
+                    <img src="assets/images/mechatronics/2.jpg" alt="3D MODEL OF ROBOT">
                     <p style="font-style: italic;">Robust Chassis Design</p>
                 </div>
 
                 <h3>Advanced Sensor Fusion and Programming</h3>
                 <p>The robot utilized sophisticated sensor fusion algorithms with priority-based decision making. Object-oriented C++ architecture enabled modular code development with dedicated classes for sensors, motors, and robot behavior.</p>
 
-                <div class="project-image">
-                    <img src="docs/assets/images/mechatronics/3.jpg" alt="HC-SR04 wiring to the Arduino Mega">
-                    <p style="font-style: italic;">HC-SR04 wiring to the Arduino Mega</p>
-                </div>
-                <div class="project-image">
-                    <img src="docs/assets/images/mechatronics/4.jpg" alt="TCRT5000 wiring to the Arduino Mega">
-                    <p style="font-style: italic;">TCRT5000 wiring to the Arduino Mega</p>
-                </div>
-                <div class="project-image">
-                    <img src="docs/assets/images/mechatronics/5.jpg" alt="ROB-14451 wiring to the Arduino Mega">
-                    <p style="font-style: italic;">ROB-14451 wiring to the Arduino Mega</p>
-                </div>
+                <!-- HC-SR04 Ultrasonic Sensors Wiring Table -->
+                <h4 style="margin-top: 2rem;">HC-SR04 Ultrasonic Sensors Wiring</h4>
+                <table style="width:100%; border-collapse:collapse; margin:1rem auto; font-size:0.95rem;">
+                    <thead style="background:#f4b400; color:#000;">
+                        <tr>
+                            <th style="border:1px solid #555; padding:10px;">Arduino Pin</th>
+                            <th style="border:1px solid #555; padding:10px;">HC-SR04 1 Pin</th>
+                            <th style="border:1px solid #555; padding:10px;">HC-SR04 2 Pin</th>
+                            <th style="border:1px solid #555; padding:10px;">HC-SR04 3 Pin</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="background:#111;">
+                            <td style="border:1px solid #555; padding:10px;">5V</td>
+                            <td style="border:1px solid #555; padding:10px;">Vcc</td>
+                            <td style="border:1px solid #555; padding:10px;">Vcc</td>
+                            <td style="border:1px solid #555; padding:10px;">Vcc</td>
+                        </tr>
+                        <tr style="background:#1a1a1a;">
+                            <td style="border:1px solid #555; padding:10px;">38, 40, 42</td>
+                            <td style="border:1px solid #555; padding:10px;">Trigger</td>
+                            <td style="border:1px solid #555; padding:10px;">Trigger</td>
+                            <td style="border:1px solid #555; padding:10px;">Trigger</td>
+                        </tr>
+                        <tr style="background:#111;">
+                            <td style="border:1px solid #555; padding:10px;">39, 41, 43</td>
+                            <td style="border:1px solid #555; padding:10px;">Echo</td>
+                            <td style="border:1px solid #555; padding:10px;">Echo</td>
+                            <td style="border:1px solid #555; padding:10px;">Echo</td>
+                        </tr>
+                        <tr style="background:#1a1a1a;">
+                            <td style="border:1px solid #555; padding:10px;">GND</td>
+                            <td style="border:1px solid #555; padding:10px;">GND</td>
+                            <td style="border:1px solid #555; padding:10px;">GND</td>
+                            <td style="border:1px solid #555; padding:10px;">GND</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p style="text-align:center; font-size:0.9rem; color:var(--text-secondary); margin-top:0.5rem; font-style:italic;">
+                    HC-SR04 ultrasonic sensor pin connections for three-sensor obstacle detection array.
+                </p>
+
+                <!-- TCRT5000 IR Sensors Wiring Table -->
+                <h4 style="margin-top: 2rem;">TCRT5000 IR Sensors Wiring</h4>
+                <table style="width:100%; border-collapse:collapse; margin:1rem auto; font-size:0.95rem;">
+                    <thead style="background:#f4b400; color:#000;">
+                        <tr>
+                            <th style="border:1px solid #555; padding:10px;">Arduino Pin</th>
+                            <th style="border:1px solid #555; padding:10px;">TCRT5000 Sensors</th>
+                            <th style="border:1px solid #555; padding:10px;">TCRT5000 Pin</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="background:#111;">
+                            <td style="border:1px solid #555; padding:10px;">5V</td>
+                            <td style="border:1px solid #555; padding:10px;">Front Left, Front Right, Back Left, Back Right</td>
+                            <td style="border:1px solid #555; padding:10px;">Vcc</td>
+                        </tr>
+                        <tr style="background:#1a1a1a;">
+                            <td style="border:1px solid #555; padding:10px;">GND</td>
+                            <td style="border:1px solid #555; padding:10px;">Front Left, Front Right, Back Left, Back Right</td>
+                            <td style="border:1px solid #555; padding:10px;">GND</td>
+                        </tr>
+                        <tr style="background:#111;">
+                            <td style="border:1px solid #555; padding:10px;">A11</td>
+                            <td style="border:1px solid #555; padding:10px;">Front Left</td>
+                            <td style="border:1px solid #555; padding:10px;">A0</td>
+                        </tr>
+                        <tr style="background:#1a1a1a;">
+                            <td style="border:1px solid #555; padding:10px;">A10</td>
+                            <td style="border:1px solid #555; padding:10px;">Front Right</td>
+                            <td style="border:1px solid #555; padding:10px;">A0</td>
+                        </tr>
+                        <tr style="background:#111;">
+                            <td style="border:1px solid #555; padding:10px;">A9</td>
+                            <td style="border:1px solid #555; padding:10px;">Back Left</td>
+                            <td style="border:1px solid #555; padding:10px;">A0</td>
+                        </tr>
+                        <tr style="background:#1a1a1a;">
+                            <td style="border:1px solid #555; padding:10px;">A8</td>
+                            <td style="border:1px solid #555; padding:10px;">Back Right</td>
+                            <td style="border:1px solid #555; padding:10px;">A0</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p style="text-align:center; font-size:0.9rem; color:var(--text-secondary); margin-top:0.5rem; font-style:italic;">
+                    TCRT5000 infrared sensor pin connections for four-corner boundary detection system.
+                </p>
+
+                <!-- SparkFun ROB-14451 Motor Driver Wiring Table -->
+                <h4 style="margin-top: 2rem;">SparkFun ROB-14451 Motor Drivers Wiring</h4>
+                <table style="width:100%; border-collapse:collapse; margin:1rem auto; font-size:0.95rem;">
+                    <thead style="background:#f4b400; color:#000;">
+                        <tr>
+                            <th style="border:1px solid #555; padding:10px;">SparkFun ROB-14451 1 Pin</th>
+                            <th style="border:1px solid #555; padding:10px;">SparkFun ROB-14451 2 Pin</th>
+                            <th style="border:1px solid #555; padding:10px;">Arduino Connection</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="background:#111;">
+                            <td style="border:1px solid #555; padding:10px;">Vm</td>
+                            <td style="border:1px solid #555; padding:10px;">Vm</td>
+                            <td style="border:1px solid #555; padding:10px;">11.1V battery</td>
+                        </tr>
+                        <tr style="background:#1a1a1a;">
+                            <td style="border:1px solid #555; padding:10px;">Vcc</td>
+                            <td style="border:1px solid #555; padding:10px;">Vcc</td>
+                            <td style="border:1px solid #555; padding:10px;">5V</td>
+                        </tr>
+                        <tr style="background:#111;">
+                            <td style="border:1px solid #555; padding:10px;">GND</td>
+                            <td style="border:1px solid #555; padding:10px;">GND</td>
+                            <td style="border:1px solid #555; padding:10px;">GND</td>
+                        </tr>
+                        <tr style="background:#1a1a1a;">
+                            <td style="border:1px solid #555; padding:10px;">A01</td>
+                            <td style="border:1px solid #555; padding:10px;">A01</td>
+                            <td style="border:1px solid #555; padding:10px;">Motor 1/3 - positive</td>
+                        </tr>
+                        <tr style="background:#111;">
+                            <td style="border:1px solid #555; padding:10px;">A02</td>
+                            <td style="border:1px solid #555; padding:10px;">A02</td>
+                            <td style="border:1px solid #555; padding:10px;">Motor 1/3 - negative</td>
+                        </tr>
+                        <tr style="background:#1a1a1a;">
+                            <td style="border:1px solid #555; padding:10px;">B02</td>
+                            <td style="border:1px solid #555; padding:10px;">B02</td>
+                            <td style="border:1px solid #555; padding:10px;">Motor 2/4 - positive</td>
+                        </tr>
+                        <tr style="background:#111;">
+                            <td style="border:1px solid #555; padding:10px;">B01</td>
+                            <td style="border:1px solid #555; padding:10px;">B01</td>
+                            <td style="border:1px solid #555; padding:10px;">Motor 2/4 - negative</td>
+                        </tr>
+                        <tr style="background:#1a1a1a;">
+                            <td style="border:1px solid #555; padding:10px;">PWMA</td>
+                            <td style="border:1px solid #555; padding:10px;">PWMA</td>
+                            <td style="border:1px solid #555; padding:10px;">Pin: 4 & 2</td>
+                        </tr>
+                        <tr style="background:#111;">
+                            <td style="border:1px solid #555; padding:10px;">AI2</td>
+                            <td style="border:1px solid #555; padding:10px;">AI2</td>
+                            <td style="border:1px solid #555; padding:10px;">Pin: 33 & 25</td>
+                        </tr>
+                        <tr style="background:#1a1a1a;">
+                            <td style="border:1px solid #555; padding:10px;">AI1</td>
+                            <td style="border:1px solid #555; padding:10px;">AI1</td>
+                            <td style="border:1px solid #555; padding:10px;">Pin: 32 & 24</td>
+                        </tr>
+                        <tr style="background:#111;">
+                            <td style="border:1px solid #555; padding:10px;">STBY</td>
+                            <td style="border:1px solid #555; padding:10px;">STBY</td>
+                            <td style="border:1px solid #555; padding:10px;">-</td>
+                        </tr>
+                        <tr style="background:#1a1a1a;">
+                            <td style="border:1px solid #555; padding:10px;">BI1</td>
+                            <td style="border:1px solid #555; padding:10px;">BI1</td>
+                            <td style="border:1px solid #555; padding:10px;">Pin: 34 & 26</td>
+                        </tr>
+                        <tr style="background:#111;">
+                            <td style="border:1px solid #555; padding:10px;">BI2</td>
+                            <td style="border:1px solid #555; padding:10px;">BI2</td>
+                            <td style="border:1px solid #555; padding:10px;">Pin: 35 & 27</td>
+                        </tr>
+                        <tr style="background:#1a1a1a;">
+                            <td style="border:1px solid #555; padding:10px;">PWMB</td>
+                            <td style="border:1px solid #555; padding:10px;">PWMB</td>
+                            <td style="border:1px solid #555; padding:10px;">Pin: 5 & 2</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p style="text-align:center; font-size:0.9rem; color:var(--text-secondary); margin-top:0.5rem; font-style:italic;">
+                    Dual motor driver pin connections for mecanum wheel control system with PWM speed regulation.
+                </p>
 
                 <h3>Weapons System and Competition Performance</h3>
-                <p>The precision lance mechanism featured servo motor control with 8" maximum extension and 30° attack angle. The lightweight acrylic construction provided durability while maintaining safety compliance and weight constraints.</p>
+                <p>The precision lance weapon system featured a Parallax Standard Servo (900-00005) with PWM control for accurate deployment. The lightweight acrylic lance extended 8" from the robot footprint at an optimized 30° attack angle for reliable balloon engagement. The servo mechanism deployed from 90° (upright starting position) to 30° (attack angle) synchronized with PixyCam target detection, while a custom 3D-printed mount secured the assembly to the chassis for stable operation throughout competitive matches.</p>
 
-                <div class="project-section">
-                    <h3>Weapons System</h3>
-                    <div style="display:flex; justify-content:center; gap:1rem; flex-wrap:wrap;">
-                        <img src="docs/assets/images/mechatronics/11.jpg" alt="Lance Housing" style="width:45%; max-width:300px; border-radius:8px;">
-                        <img src="docs/assets/images/mechatronics/12.jpg" alt="Lance Weapon System" style="width:45%; max-width:300px; border-radius:8px;">
-                    </div>
-                    <p style="text-align:center; font-style:italic; margin-top:0.5rem;">
-                    <strong>Precision Lance Mechanism:</strong> Servo-controlled system providing reliable balloon engagement.</p>
+                <h4 style="margin-top: 2rem; margin-bottom: 1rem;">Weapons System</h4>
+                <div style="display:flex; justify-content:center; gap:1rem; flex-wrap:wrap; margin-bottom:1rem;">
+                    <img src="assets/images/mechatronics/11.jpg" alt="Lance Housing" style="width:45%; max-width:300px; border-radius:8px;">
+                    <img src="assets/images/mechatronics/12.jpg" alt="Lance Weapon System" style="width:45%; max-width:300px; border-radius:8px;">
                 </div>
+                <p style="text-align:center; font-size:0.9rem; color:var(--text-secondary); margin-bottom:1.5rem; font-style:italic;">
+                    <strong>Precision Lance Mechanism:</strong> Servo-controlled system providing reliable balloon engagement.
+                </p>
 
-                <div class="project-image">
-                    <img src="docs/assets/images/mechatronics/6.jpg" alt="Servo Motor wiring to the Arduino Mega">
-                    <p style="font-style: italic;">Servo Motor wiring to the Arduino Mega</p>
-                </div>
+                <!-- Parallax Servo Motor Wiring Table -->
+                <table style="width:60%; border-collapse:collapse; margin:1rem auto; font-size:0.95rem;">
+                    <thead style="background:#f4b400; color:#000;">
+                        <tr>
+                            <th style="border:1px solid #555; padding:10px;">Parallax Standard Servo (900-00005) Pin</th>
+                            <th style="border:1px solid #555; padding:10px;">Arduino Pin Connection</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="background:#111;">
+                            <td style="border:1px solid #555; padding:10px;">GND</td>
+                            <td style="border:1px solid #555; padding:10px;">GND</td>
+                        </tr>
+                        <tr style="background:#1a1a1a;">
+                            <td style="border:1px solid #555; padding:10px;">Vcc</td>
+                            <td style="border:1px solid #555; padding:10px;">5V</td>
+                        </tr>
+                        <tr style="background:#111;">
+                            <td style="border:1px solid #555; padding:10px;">PWM</td>
+                            <td style="border:1px solid #555; padding:10px;">Pin 8</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p style="text-align:center; font-size:0.9rem; color:var(--text-secondary); margin-top:0.5rem; font-style:italic;">
+                    Servo motor wiring to the Arduino Mega.
+                </p>
                 
             </div>
 
@@ -503,93 +687,93 @@ const projectsData = [
                 <li><strong>Budget Achievement:</strong> Complete system delivered under $200 budget constraint while achieving premium performance</li>
             </ul>
             <div class="project-image">
-                <img src="docs/assets/images/mechatronics/0.jpg" alt="Complete Robot Assembly">
+                <img src="assets/images/mechatronics/0.jpg" alt="Complete Robot Assembly">
                 <p style="font-style: italic;"><strong>Championship-Winning Robot:</strong> Complete autonomous design featuring mecanum wheels, sensor array, and lance weapon system. The compact design fits competition constraints while housing all systems needed for autonomous operation.</p>
             </div>
         `,
-        reportLink: "docs/assets/docs/Final_Report_Mechatronics.pdf",
+        reportLink: "assets/docs/Final_Report_Mechatronics.pdf",
         githubLink: "https://github.com/yourusername/mario-kart-robot"
     },
     {
         id: 4,
         title: "Reverse Engineering - KMM Handheld Wireless Vacuum",
         shortDescription: "Comprehensive reverse engineering and redesign achieving 46% part count reduction for improved manufacturability.",
-        image: "docs/assets/images/Reverse Engineering/0.jpg",
+        image: "assets/images/Reverse Engineering/0.jpg",
         imageGallery: [
             {
-                src: "docs/assets/images/Reverse Engineering/1.jpg",
+                src: "assets/images/Reverse Engineering/1.jpg",
                 caption: "System input/output analysis diagram showing KMM vacuum cleaner functional requirements and design constraints"
             },
             {
-                src: "docs/assets/images/Reverse Engineering/0.jpg",
+                src: "assets/images/Reverse Engineering/0.jpg",
                 caption: "Complete KMM handheld wireless vacuum as purchased, ready for systematic reverse engineering analysis"
             },
             {
-                src: "docs/assets/images/Reverse Engineering/2.jpg",
+                src: "assets/images/Reverse Engineering/2.jpg",
                 caption: "Detailed component breakdown showing all individual parts after complete disassembly process"
             },
             {
-                src: "docs/assets/images/Reverse Engineering/4.jpg",
+                src: "assets/images/Reverse Engineering/4.jpg",
                 caption: "Engineering analysis of critical components with dimensional measurements and material identification"
             },
             {
-                src: "docs/assets/images/Reverse Engineering/28.jpg",
+                src: "assets/images/Reverse Engineering/28.jpg",
                 caption: "CAD model reconstruction showing internal assembly structure and component relationships"
             },
             {
-                src: "docs/assets/images/Reverse Engineering/29.jpg",
+                src: "assets/images/Reverse Engineering/29.jpg",
                 caption: "Cross-sectional view revealing internal airflow paths and filtration system design"
             },
             {
-                src: "docs/assets/images/Reverse Engineering/30.jpg",
+                src: "assets/images/Reverse Engineering/30.jpg",
                 caption: "Motor and impeller assembly showing power transmission and vacuum generation mechanism"
             },
             {
-                src: "docs/assets/images/Reverse Engineering/31.jpg",
+                src: "assets/images/Reverse Engineering/31.jpg",
                 caption: "Battery compartment and charging system analysis with thermal management considerations"
             },
             {
-                src: "docs/assets/images/Reverse Engineering/32.jpg",
+                src: "assets/images/Reverse Engineering/32.jpg",
                 caption: "Filter housing design showing HEPA filtration system and maintenance accessibility"
             },
             {
-                src: "docs/assets/images/Reverse Engineering/35.jpg",
+                src: "assets/images/Reverse Engineering/35.jpg",
                 caption: "Redesigned assembly with consolidated components achieving 46% part count reduction"
             },
             {
-                src: "docs/assets/images/Reverse Engineering/36.jpg",
+                src: "assets/images/Reverse Engineering/36.jpg",
                 caption: "DFM optimization results showing simplified manufacturing processes and cost analysis"
             },
             {
-                src: "docs/assets/images/Reverse Engineering/37.jpg",
+                src: "assets/images/Reverse Engineering/37.jpg",
                 caption: "Assembly sequence optimization reducing production time and labor costs"
             },
             {
-                src: "docs/assets/images/Reverse Engineering/38.jpg",
+                src: "assets/images/Reverse Engineering/38.jpg",
                 caption: "Material selection analysis comparing original vs. optimized component materials"
             },
             {
-                src: "docs/assets/images/Reverse Engineering/39.jpg",
+                src: "assets/images/Reverse Engineering/39.jpg",
                 caption: "Cost breakdown analysis showing manufacturing savings and market competitiveness"
             },
             {
-                src: "docs/assets/images/Reverse Engineering/40.jpg",
+                src: "assets/images/Reverse Engineering/40.jpg",
                 caption: "Final redesigned product with improved manufacturability and maintained functionality"
             },
             {
-                src: "docs/assets/images/Reverse Engineering/41.jpg",
+                src: "assets/images/Reverse Engineering/41.jpg",
                 caption: "Engineering drawings with GD&T specifications for manufacturing implementation"
             },
             {
-                src: "docs/assets/images/Reverse Engineering/42.jpg",
+                src: "assets/images/Reverse Engineering/42.jpg",
                 caption: "Quality control specifications and testing protocols for production validation"
             },
             {
-                src: "docs/assets/images/Reverse Engineering/43.jpg",
+                src: "assets/images/Reverse Engineering/43.jpg",
                 caption: "Production planning and supply chain optimization for efficient manufacturing"
             },
             {
-                src: "docs/assets/images/Reverse Engineering/44.jpg",
+                src: "assets/images/Reverse Engineering/44.jpg",
                 caption: "Market analysis and competitive positioning for the redesigned vacuum cleaner"
             }
         ],
@@ -609,11 +793,11 @@ const projectsData = [
             <div class="project-section">
                 <h3>Product Analysis and Disassembly</h3>
                 <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:10px; margin-bottom:1rem;">
-                    <img src="docs/assets/images/Reverse Engineering/28.jpg" alt="Component Breakdown" style="width:30%; max-width:260px; border-radius:8px;">
-                    <img src="docs/assets/images/Reverse Engineering/29.jpg" alt="Component Breakdown" style="width:30%; max-width:260px; border-radius:8px;">
-                    <img src="docs/assets/images/Reverse Engineering/30.jpg" alt="Component Breakdown" style="width:30%; max-width:260px; border-radius:8px;">
-                    <img src="docs/assets/images/Reverse Engineering/31.jpg" alt="Component Breakdown" style="width:30%; max-width:260px; border-radius:8px;">
-                    <img src="docs/assets/images/Reverse Engineering/32.jpg" alt="Component Breakdown" style="width:30%; max-width:260px; border-radius:8px;">
+                    <img src="assets/images/Reverse Engineering/28.jpg" alt="Component Breakdown" style="width:30%; max-width:260px; border-radius:8px;">
+                    <img src="assets/images/Reverse Engineering/29.jpg" alt="Component Breakdown" style="width:30%; max-width:260px; border-radius:8px;">
+                    <img src="assets/images/Reverse Engineering/30.jpg" alt="Component Breakdown" style="width:30%; max-width:260px; border-radius:8px;">
+                    <img src="assets/images/Reverse Engineering/31.jpg" alt="Component Breakdown" style="width:30%; max-width:260px; border-radius:8px;">
+                    <img src="assets/images/Reverse Engineering/32.jpg" alt="Component Breakdown" style="width:30%; max-width:260px; border-radius:8px;">
                 </div>
                 <p style="font-style:italic; text-align:center; margin-top:0.5rem;">
                 <strong>Complete Component Analysis:</strong> Systematic breakdown showing all 26 parts after disassembly.</p>
@@ -628,7 +812,7 @@ const projectsData = [
                 </ul>
 
                 <div class="project-image">
-                    <img src="docs/assets/images/Reverse Engineering/2.jpg" alt="Component Breakdown">
+                    <img src="assets/images/Reverse Engineering/2.jpg" alt="Component Breakdown">
                     <p style="font-style: italic;"><strong>Complete Component Analysis:</strong> Systematic breakdown showing all 26 individual parts after disassembly. The analysis revealed complex assembly sequences that contributed to manufacturing inefficiency and increased production costs.</p>
                 </div>
 
@@ -636,7 +820,7 @@ const projectsData = [
                 <p>Comprehensive CAD modeling enabled detailed analysis of internal mechanisms and airflow paths. The redesign strategy focused on part consolidation and manufacturing simplification while maintaining functionality.</p>
 
                 <div class="project-image">
-                    <img src="docs/assets/images/Reverse Engineering/28.jpg" alt="CAD Model">
+                    <img src="assets/images/Reverse Engineering/28.jpg" alt="CAD Model">
                     <p style="font-style: italic;"><strong>CAD Model Reconstruction:</strong> Detailed SolidWorks assembly showing internal component relationships and mechanical interfaces. The model enabled precise analysis of tolerances and assembly sequences for design improvements.</p>
                 </div>
 
@@ -683,14 +867,14 @@ const projectsData = [
 
                 <div style="display:grid; grid-template-columns:repeat(2,1fr); gap:1rem; margin:1rem 0;">
                     <div>
-                        <img src="docs/assets/images/Reverse Engineering/86.jpg" alt="Ashby Chart - Stiffness vs Density"
+                        <img src="assets/images/Reverse Engineering/86.jpg" alt="Ashby Chart - Stiffness vs Density"
                             style="width:90%; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.4);">
                         <p style="text-align:center; font-size:0.9rem; color:var(--text-secondary); font-style:italic; margin-top:0.5rem;">
                             Stiffness vs. Density Ashby chart highlighting material trade-offs.
                         </p>
                     </div>
                     <div>
-                        <img src="docs/assets/images/Reverse Engineering/87.jpg" alt="Ashby Chart - Cost vs Strength"
+                        <img src="assets/images/Reverse Engineering/87.jpg" alt="Ashby Chart - Cost vs Strength"
                             style="width:100%; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.4);">
                         <p style="text-align:center; font-size:0.9rem; color:var(--text-secondary); font-style:italic; margin-top:0.5rem;">
                             Cost vs. Strength Ashby chart validating polymer B selection.
@@ -708,7 +892,7 @@ const projectsData = [
                 </ul>
 
                 <div class="project-image">
-                    <img src="docs/assets/images/Reverse Engineering/35.jpg" alt="Redesigned Assembly">
+                    <img src="assets/images/Reverse Engineering/35.jpg" alt="Redesigned Assembly">
                     <p style="font-style: italic;"><strong>Optimized Redesign:</strong> Consolidated assembly achieving significant part count reduction through strategic component integration. The redesign maintains all functionality while improving manufacturability and reducing production complexity.</p>
                 </div>
             </div>
@@ -723,14 +907,14 @@ const projectsData = [
                 <li><strong>Professional Documentation:</strong> Created industry-standard engineering drawings suitable for manufacturing implementation</li>
             </ul>
         `,
-        reportLink: "docs/assets/docs/MCEN 5045 Reverse Engineering Report.pdf",
+        reportLink: "assets/docs/MCEN 5045 Reverse Engineering Report.pdf",
         githubLink: "https://github.com/yourusername/vacuum-reverse-engineering"
     },
     {
         id: 5,
         title: "4-DOF Kinematic Arm with Gripper - Forward Kinematics Analysis",
         shortDescription: "Comprehensive design and kinematic analysis of 4-degree-of-freedom robotic arm with servo-controlled gripper and forward kinematics implementation.",
-        image: "docs/assets/images/MECHATRONICS1-GRAD (5115) PROJECT AND PAPER SUBMISSION - K.VAIKUNTH KESHAV-1/5.jpg",
+        image: "assets/images/MECHATRONICS1-GRAD (5115) PROJECT AND PAPER SUBMISSION - K.VAIKUNTH KESHAV-1/5.jpg",
         technologies: ["SolidWorks", "Forward Kinematics", "Servo Motors", "Lead Screw Mechanism", "Mathematical Modeling"],
         category: "Robotics",
         date: "August 2024 - December 2024",
@@ -745,9 +929,9 @@ const projectsData = [
                 <p>The robotic arm incorporates four distinct degrees of freedom: a rotating base, two articulated arm segments, and a precision gripper. Each component is servo-controlled for accurate positioning and smooth operation.</p>
 
                 <div class="project-images" style="display:grid; grid-template-columns:repeat(3,1fr); gap:1rem;">
-                    <img src="docs/assets/images/MECHATRONICS1-GRAD (5115) PROJECT AND PAPER SUBMISSION - K.VAIKUNTH KESHAV-1/1.jpg" alt="Mechanical Design Components">
-                    <img src="docs/assets/images/MECHATRONICS1-GRAD (5115) PROJECT AND PAPER SUBMISSION - K.VAIKUNTH KESHAV-1/2.jpg" alt="Kinematic Analysis">
-                    <img src="docs/assets/images/MECHATRONICS1-GRAD (5115) PROJECT AND PAPER SUBMISSION - K.VAIKUNTH KESHAV-1/3.jpg" alt="Complete Assembly">
+                    <img src="assets/images/MECHATRONICS1-GRAD (5115) PROJECT AND PAPER SUBMISSION - K.VAIKUNTH KESHAV-1/1.jpg" alt="Mechanical Design Components">
+                    <img src="assets/images/MECHATRONICS1-GRAD (5115) PROJECT AND PAPER SUBMISSION - K.VAIKUNTH KESHAV-1/2.jpg" alt="Kinematic Analysis">
+                    <img src="assets/images/MECHATRONICS1-GRAD (5115) PROJECT AND PAPER SUBMISSION - K.VAIKUNTH KESHAV-1/3.jpg" alt="Complete Assembly">
                 </div>
                 <p style="font-style: italic; text-align:center; margin-top:0.5rem;">System configuration, kinematic model, and assembled 4-DOF arm with gripper.</p>
 
@@ -779,61 +963,61 @@ const projectsData = [
                 <li><strong>Design Limitations Identified:</strong> Recognized restricted motion range due to fixed joint angles and motor accuracy requirements</li>
             </ul>
         `,
-        reportLink: "docs/assets/docs/MECHATRONICS1-GRAD (5115) PROJECT AND PAPER SUBMISSION - K.VAIKUNTH KESHAV-1.pdf",
+        reportLink: "assets/docs/MECHATRONICS1-GRAD (5115) PROJECT AND PAPER SUBMISSION - K.VAIKUNTH KESHAV-1.pdf",
         githubLink: "https://github.com/yourusername/4dof-robotic-arm"
     },
     {
         id: 6,
         title: "Smart Concussion Detection Helmet - Athlete Safety Innovation",
         shortDescription: "First mass-market concussion detection helmet with integrated accelerometers and real-time impact monitoring for winter sports athletes.",
-        image: "docs/assets/images/APD/1.jpg",
+        image: "assets/images/APD/1.jpg",
         imageGallery: [
             {
-                src: "docs/assets/images/APD/1.jpg",
+                src: "assets/images/APD/1.jpg",
                 caption: "Final prototype of the smart concussion detection helmet with integrated sensor array and wireless connectivity"
             },
             {
-                src: "docs/assets/images/APD/7.jpg",
+                src: "assets/images/APD/7.jpg",
                 caption: "Helmet interior showing integrated sensor placement and padding system maintaining comfort and safety standards"
             },
             {
-                src: "docs/assets/images/APD/8.jpg",
+                src: "assets/images/APD/8.jpg",
                 caption: "Arduino-based electronics system with accelerometer sensors and real-time data processing capabilities"
             },
             {
-                src: "docs/assets/images/APD/5.jpg",
+                src: "assets/images/APD/5.jpg",
                 caption: "MIT App Inventor development environment used for creating the mobile application interface"
             },
             {
-                src: "docs/assets/images/APD/34.jpg",
+                src: "assets/images/APD/34.jpg",
                 caption: "Mobile app interface displaying real-time G-force measurements and impact detection with user-friendly risk indicators"
             },
             {
-                src: "docs/assets/images/APD/27.jpg",
+                src: "assets/images/APD/27.jpg",
                 caption: "Detailed view of sensor integration within helmet liner showing seamless electronics placement"
             },
             {
-                src: "docs/assets/images/APD/28.jpg",
+                src: "assets/images/APD/28.jpg",
                 caption: "Complete electronics assembly with Arduino, accelerometers, and wireless communication module"
             },
             {
-                src: "docs/assets/images/APD/16.jpg",
+                src: "assets/images/APD/16.jpg",
                 caption: "Comprehensive business model canvas showing market strategy, revenue streams, and partnership opportunities"
             },
             {
-                src: "docs/assets/images/APD/9.jpg",
+                src: "assets/images/APD/9.jpg",
                 caption: "Performance comparison radar chart showing helmet evaluation across key metrics: cost, durability, aesthetics, and complexity"
             },
             {
-                src: "docs/assets/images/APD/20.jpg",
+                src: "assets/images/APD/20.jpg",
                 caption: "Key Performance Indicators analysis demonstrating progressive improvement from prototype to final concept"
             },
             {
-                src: "docs/assets/images/APD/14.jpg",
+                src: "assets/images/APD/14.jpg",
                 caption: "System architecture diagram illustrating injury detection workflow and smart helmet integration components"
             },
             {
-                src: "docs/assets/images/APD/2.jpg",
+                src: "assets/images/APD/2.jpg",
                 caption: "User testing session with winter sports athlete evaluating helmet comfort and functionality"
             }
         ],
@@ -852,7 +1036,7 @@ const projectsData = [
                 <p>Sports-related concussions represent a significant public health challenge, with repeated head impacts contributing to chronic traumatic encephalopathy (CTE) and long-term neurological damage. Existing helmets focus primarily on passive protection, lacking real-time impact monitoring capabilities that could enable early detection and prevention of second-impact syndrome.</p>
 
                 <div class="project-image">
-                    <img src="docs/assets/images/APD/2.jpg" alt="User Research">
+                    <img src="assets/images/APD/2.jpg" alt="User Research">
                     <p style="font-style: italic;"><strong>Comprehensive User Research:</strong> Conducted extensive interviews with winter mountain athletes to identify key requirements: comfort, durability, aesthetics, cost-effectiveness, and simplicity. User feedback drove design decisions throughout the development process.</p>
                 </div>
 
@@ -869,7 +1053,7 @@ const projectsData = [
                 <div class="project-section">
                     <h3>Advanced Electronics Integration</h3>
                     <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:1rem; margin-bottom:1rem;">
-                        <img src="docs/assets/images/APD/28.jpg" alt="Helmet Integration" style="width:45%; max-width:300px; border-radius:8px;">
+                        <img src="assets/images/APD/28.jpg" alt="Helmet Integration" style="width:45%; max-width:300px; border-radius:8px;">
                     </div>
                     <p style="text-align:center; font-style:italic;"><strong>Electronics and App Integration:</strong> Helmet wiring and mobile monitoring interface demonstrating real-time G-force tracking and alert system.</p>
                 </div>
@@ -882,8 +1066,8 @@ const projectsData = [
                     <p>The companion mobile application provides intuitive access to impact data with simplified risk assessment indicators. User testing revealed the importance of non-technical data presentation and immediate actionable feedback.</p>
                     <div class="project-image">
                         <div style="display:grid; grid-template-columns:repeat(2,1fr); gap:1rem; justify-items:center; margin-bottom:1rem;">
-                            <img src="docs/assets/images/APD/31.jpg" alt="Mobile App Block Design" style="width:100%; max-width:600px; border-radius:8px;">
-                            <img src="docs/assets/images/APD/32.jpg" alt="Mobile App Screen" style="width:20%; max-width:300px; border-radius:8px;">
+                            <img src="assets/images/APD/31.jpg" alt="Mobile App Block Design" style="width:100%; max-width:600px; border-radius:8px;">
+                            <img src="assets/images/APD/32.jpg" alt="Mobile App Screen" style="width:20%; max-width:300px; border-radius:8px;">
                         </div>
                         <p style="font-style:italic; text-align:center;">
                             <strong>User-Friendly Mobile Interface:</strong> Real-time impact monitoring with simple risk indicators. 
@@ -901,7 +1085,7 @@ const projectsData = [
                 </ul>
 
                 <div class="project-image">
-                    <img src="docs/assets/images/APD/34.jpg" alt="Business Model">
+                    <img src="assets/images/APD/34.jpg" alt="Business Model">
                     <p style="font-style: italic;"><strong>Comprehensive Business Model:</strong> Strategic analysis covering key partnerships, activities, value propositions, customer relationships, and revenue streams for successful market entry and scaling.</p>
                 </div>
             </div>
@@ -926,35 +1110,35 @@ const projectsData = [
                         Comparative performance ratings (0–10) across prototypes showing progressive improvement toward the final concept.
                     </p>
                     <div style="max-width:700px; margin:0 auto; font-size:0.9rem;">
-                        <div style="margin-bottom:8px;"><strong>Q1</strong> – <span style='color:#4CAF50;'>Final Concept</span>: 8 | <span style='color:#FF9800;'>Prototype 2</span>: 6 | <span style='color:#2196F3;'>Prototype 1</span>: 6</div>
+                        <div style="margin-bottom:8px;"><strong>Q1</strong> – <span style='color:#4CAF50;'>Final Concept</span>: 8 | <span style='color:#FF9800;'>Prototype 2</span>: 6 | <span style='color:#2196F3;'>Prototype 1</span>: 6</div>
                         <div style="height:18px; background:#222; border-radius:4px; margin-bottom:12px;">
                             <div style="width:80%; height:100%; background:#4CAF50; border-radius:4px 0 0 4px;"></div>
                             <div style="width:60%; height:100%; background:#FF9800; position:relative; top:-18px; opacity:0.7;"></div>
                             <div style="width:60%; height:100%; background:#2196F3; position:relative; top:-36px; opacity:0.4;"></div>
                         </div>
 
-                        <div style="margin-bottom:8px;"><strong>Q2</strong> – Final Concept: 6 | Prototype 2: 5 | Prototype 1: 5</div>
+                        <div style="margin-bottom:8px;"><strong>Q2</strong> – Final Concept: 6 | Prototype 2: 5 | Prototype 1: 5</div>
                         <div style="height:18px; background:#222; border-radius:4px; margin-bottom:12px;">
                             <div style="width:60%; height:100%; background:#4CAF50;"></div>
                             <div style="width:50%; height:100%; background:#FF9800; position:relative; top:-18px; opacity:0.7;"></div>
                             <div style="width:50%; height:100%; background:#2196F3; position:relative; top:-36px; opacity:0.4;"></div>
                         </div>
 
-                        <div style="margin-bottom:8px;"><strong>Q3</strong> – Final Concept: 9 | Prototype 2: 8 | Prototype 1: 6</div>
+                        <div style="margin-bottom:8px;"><strong>Q3</strong> – Final Concept: 9 | Prototype 2: 8 | Prototype 1: 6</div>
                         <div style="height:18px; background:#222; border-radius:4px; margin-bottom:12px;">
                             <div style="width:90%; height:100%; background:#4CAF50;"></div>
                             <div style="width:80%; height:100%; background:#FF9800; position:relative; top:-18px; opacity:0.7;"></div>
                             <div style="width:60%; height:100%; background:#2196F3; position:relative; top:-36px; opacity:0.4;"></div>
                         </div>
 
-                        <div style="margin-bottom:8px;"><strong>Q4</strong> – Final Concept: 8 | Prototype 2: 8 | Prototype 1: 8</div>
+                        <div style="margin-bottom:8px;"><strong>Q4</strong> – Final Concept: 8 | Prototype 2: 8 | Prototype 1: 8</div>
                         <div style="height:18px; background:#222; border-radius:4px; margin-bottom:12px;">
                             <div style="width:80%; height:100%; background:#4CAF50;"></div>
                             <div style="width:80%; height:100%; background:#FF9800; position:relative; top:-18px; opacity:0.7;"></div>
                             <div style="width:80%; height:100%; background:#2196F3; position:relative; top:-36px; opacity:0.4;"></div>
                         </div>
 
-                        <div style="margin-bottom:8px;"><strong>Q5</strong> – Final Concept: 9 | Prototype 2: 7 | Prototype 1: 6</div>
+                        <div style="margin-bottom:8px;"><strong>Q5</strong> – Final Concept: 9 | Prototype 2: 7 | Prototype 1: 6</div>
                         <div style="height:18px; background:#222; border-radius:4px;">
                             <div style="width:90%; height:100%; background:#4CAF50;"></div>
                             <div style="width:70%; height:100%; background:#FF9800; position:relative; top:-18px; opacity:0.7;"></div>
@@ -964,7 +1148,7 @@ const projectsData = [
 
                     </div>
         `,
-        reportLink: "docs/assets/docs/Concussion Detection Helmet Final Report.pdf",
+        reportLink: "assets/docs/Concussion Detection Helmet Final Report.pdf",
         projectLink: "https://sites.google.com/d/1s3id4KPpeEug2tKGhUHZ599dH19ybTr3/p/1Ota9ME-rngVZcl83DQrGWqbYMmL6BOGQ/edit",
         githubLink: "https://github.com/yourusername/concussion-detection-helmet"
     }
@@ -1332,16 +1516,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-/* ==== CHANGE LOG (Oct 27, 2025) ====
-1) Cacao hero image path fixed to "19.jpg"; kept gallery; card captions removed globally.
-2) All card-level captions removed in generateProjectCards (cleaner title-first layout).
-3) Mario Kart Robot: Lance Housing image updated to 11.jpg (was 7.jpg).
-4) KMM Vacuum: Added "Material Selection and Evaluation" table; identified Option B as winner.
-5) 4-DOF Arm: System Config section now shows a 3-image grid (1.jpg, 2.jpg, 3.jpg) together.
-6) Concussion Helmet: 
-   - Advanced Electronics uses 28.jpg
-   - Business Model uses 34.jpg
-   - Mobile Interface shows 31.jpg + 32.jpg (two-up grid).
-7) All figure captions within modal content styled in italics.
+/* ==== CHANGE LOG ====
+Nov 2025: Added comprehensive wiring tables for Mario Kart Robot project
+- HC-SR04 Ultrasonic Sensors wiring table with centered italic caption
+- TCRT5000 IR Sensors wiring table with centered italic caption
+- SparkFun ROB-14451 Motor Drivers wiring table with centered italic caption
+- Parallax Standard Servo wiring table combined with weapons system images
+- Balanced weapons system description with optimal technical detail (servo specs, deployment mechanics, materials)
+All tables use consistent styling with gold headers (#f4b400), alternating dark rows, and professional centered italic captions
+Weapons System section: streamlined layout with images, wiring table, and focused technical description
 */
-
